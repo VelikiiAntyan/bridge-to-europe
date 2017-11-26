@@ -1,0 +1,45 @@
+// .shared-block-link{
+
+    // display: block;
+
+    .shared-heading{
+        
+    }
+    
+    .block-img{
+        display:block;
+        background-color: lightblue;
+        width: 60%;
+    }
+
+    // &:hover{
+    //     cursor: pointer;
+    // }
+    
+// }
+.shared-block-details{
+    margin: 1.25rem;
+    width: 40%; 
+}
+
+.shared-block-wrapper{
+    display: flex;
+}
+
+.shared-block-footer-wrapper{
+    text-align: right;
+    padding: 1rem;
+}
+
+.event-btn{
+    width: 100%;
+    color: white;
+    background-color: #169BD5;
+    margin-top: 1rem;
+}
+
+.past-event .event-btn{
+    display: none;
+}
+
+

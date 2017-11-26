@@ -5,3 +5,7 @@ require('html-loader!./templates/index.html');
 
 let indexPage = new HelloWorld('Hello from index page!');
 console.log(indexPage.sayHello());
+
+
+// console.log(indexPage.getFooter())
+

@@ -1,0 +1,12 @@
+.content-row{
+    display: flex;
+}
+
+.img-wrapper, .text-wrapper{
+    width:50%;
+}
+
+.img-wrapper{
+    background-color: red;
+    display: block;
+}

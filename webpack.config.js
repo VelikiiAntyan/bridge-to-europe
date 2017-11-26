@@ -13,8 +13,9 @@ const config = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         index: './index.js',
-        uikit: './uikit.js',
-        contact: './contact.js'
+        about: './about.js',
+        contact: './contact.js',
+        header: './header.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -76,8 +77,24 @@ const config = {
                         }
                     }
                 ]
-            }
+            },
+        //     {
+        //         test: /\.(woff|woff2|eot|ttf|otf)$/,
+        //         use: [
+        //         'file-loader'
+        //         ]
+        //     },
 
+        // ],
+        // loaders: [
+        //     {
+        //         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        //         loader: "url-loader?limit=10000&mimetype=application/font-woff"
+        //     },
+        //     {
+        //         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        //         loader: "file-loader"
+        //     },
         ]
     },
     plugins: [

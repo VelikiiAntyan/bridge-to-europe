@@ -1,0 +1,34 @@
+.app-header{
+
+    margin: 0;
+    
+    .row{
+        margin: 0;
+    }
+    // display: flex;
+    // justify-content: space-between;
+
+    .navigation-list-wrapper{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .library-logo-cont{
+        text-align: right;
+    }
+
+    // .website-logo-cont{
+    //     padding: 0;
+    // }
+}
+
+[class^="col-xs-"]{
+    padding: 0;
+    margin: 0;
+}
+
+.main-content-wrapper{
+    background-color: #EEEEEE;
+}
+

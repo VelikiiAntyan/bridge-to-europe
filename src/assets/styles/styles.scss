@@ -1,12 +1,10 @@
-@import 'vendor/burger';
+@import 'base/main';
 
-@import 'base/variables';
-@import 'base/base';
+@import 'shared-styles/header';
+@import 'shared-styles/footer';
+@import 'shared-styles/shared';
 
-@import 'atoms/typography';
-@import 'atoms/lists';
-@import 'atoms/buttons';
 
-@import 'molecues/logo';
-
-@import 'organisms/header';
+// @import 'partials/home';
+@import 'partials/about';
+// @import 'shared-styles/fontello.css';

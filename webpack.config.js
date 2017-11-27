@@ -21,6 +21,7 @@ const config = {
         coursesEducation: './coursesEducation.js',
         singleCourse: './singleCourse.js',
         projects: './projects.js',
+        singleProject: './singleProject.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

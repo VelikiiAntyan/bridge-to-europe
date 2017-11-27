@@ -1,0 +1,34 @@
+.singleCourse-main-wrapper{
+
+    display: flex;
+    align-items: flex-start;
+
+    .program-description{
+        width:60%;
+        padding-right: 1.25rem;
+    }
+    
+}
+
+.sign-up{
+    width:40%;
+    padding-left: 1.25rem;
+    
+    h2{
+        padding-left: 1.25rem;
+    }
+    
+    .form-wrapper{
+        border-left: 1px solid gray;
+    }
+    
+    .form-input-wrapper{
+        padding-left: 1.25rem;
+
+        :nth-child(1), :nth-child(2){
+            width: 100%;
+            padding: 1.25rem 0;
+            margin-bottom: 0.25rem;
+        }
+    }
+}

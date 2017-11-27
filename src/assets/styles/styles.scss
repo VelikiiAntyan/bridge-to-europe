@@ -1,16 +1,17 @@
 @import 'base/main';
 @import 'base/mixins';
+@import 'base/variables';
 
 @import 'shared-styles/header';
 @import 'shared-styles/footer';
 @import 'shared-styles/shared';
-
 
 // @import 'partials/home';
 @import 'partials/about';
 @import 'partials/eventsExhibitions';
 @import 'partials/singleEvent';
 @import 'partials/coursesEducation';
+@import 'partials/singleCourse';
 
 
 // @import 'shared-styles/fontello.css';

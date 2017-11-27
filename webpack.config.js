@@ -19,6 +19,7 @@ const config = {
         eventsExhibitions: './eventsExhibitions.js',
         singleEvent: './singleEvent.js',
         coursesEducation: './coursesEducation.js',
+        singleCourse: './singleCourse.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

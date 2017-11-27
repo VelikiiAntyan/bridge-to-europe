@@ -16,6 +16,8 @@ const config = {
         about: './about.js',
         contact: './contact.js',
         header: './header.js',
+        eventsExhibitions: './eventsExhibitions.js',
+        singleEvent: './singleEvent.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

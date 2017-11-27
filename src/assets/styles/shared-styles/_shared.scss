@@ -1,22 +1,18 @@
-// .shared-block-link{
+.shared-header{
+    height: 300px;
+    background-color: red;
+}
 
-    // display: block;
-
-    .shared-heading{
-        
-    }
+.shared-heading{
     
-    .block-img{
-        display:block;
-        background-color: lightblue;
-        width: 60%;
-    }
+}
 
-    // &:hover{
-    //     cursor: pointer;
-    // }
-    
-// }
+.block-img{
+    display:block;
+    background-color: lightblue;
+    width: 60%;
+}
+
 .shared-block-details{
     margin: 1.25rem;
     width: 40%; 

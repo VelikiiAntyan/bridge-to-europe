@@ -1,4 +1,5 @@
 @import 'base/main';
+@import 'base/mixins';
 
 @import 'shared-styles/header';
 @import 'shared-styles/footer';
@@ -7,4 +8,8 @@
 
 // @import 'partials/home';
 @import 'partials/about';
+@import 'partials/eventsExhibitions';
+@import 'partials/singleEvent';
+
+
 // @import 'shared-styles/fontello.css';

@@ -18,6 +18,7 @@ const config = {
         header: './header.js',
         eventsExhibitions: './eventsExhibitions.js',
         singleEvent: './singleEvent.js',
+        coursesEducation: './coursesEducation.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

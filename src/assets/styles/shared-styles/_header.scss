@@ -4,7 +4,7 @@
     align-items: center;
     padding: 1rem;
     margin: 0;
-    
+
     .row{
         margin: 0;
     }
@@ -19,11 +19,12 @@
         text-align: right;
     }
 
-    
+
+
 }
 
 .input-wrapper{
-    position: relative; 
+    position: relative;
 }
 
 #input-search-icon{
@@ -40,5 +41,23 @@
 
 .main-content-wrapper{
     background-color: #EEEEEE;
+}
+
+@media (max-width: 768px) {
+  .header-center{
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .website-logo-cont{
+    padding: 0;
+  }
+
+  .library-logo-cont{
+    display: none;
+  }
 }
 

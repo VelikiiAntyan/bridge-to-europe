@@ -1,12 +1,13 @@
 .app-header{
 
+    display: flex;
+    align-items: center;
+    padding: 1rem;
     margin: 0;
     
     .row{
         margin: 0;
     }
-    // display: flex;
-    // justify-content: space-between;
 
     .navigation-list-wrapper{
         list-style: none;
@@ -18,9 +19,18 @@
         text-align: right;
     }
 
-    // .website-logo-cont{
-    //     padding: 0;
-    // }
+    
+}
+
+.input-wrapper{
+    position: relative; 
+}
+
+#input-search-icon{
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    font-size: 20px;
 }
 
 [class^="col-xs-"]{

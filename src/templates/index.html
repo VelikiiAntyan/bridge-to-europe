@@ -10,27 +10,29 @@
 
     <header class="app-header row">
         <div class="website-logo-cont col-xs-2">
-            <img src="../assets/images/bridge-to-europe.png" alt="Bridge To Europe">
+            <img width="108" src="../assets/images/bridge-to-europe.png" alt="Bridge To Europe">
         </div>
         <div class="header-center row col-xs-8">
             <nav class="desktop-navigation-links">
                 <ul class="navigation-list-wrapper">
                     <li class="col-xs-1"></li>
-                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links"></a>About</li>
-                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links"></a>Projects</li>
-                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links"></a>Education &amp; Courses</li>
-                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links"></a>Events &amp; Exhibitions</li>
+                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links">About</a></li>
+                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links">Projects</a></li>
+                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links">Education &amp; Courses</a></li>
+                    <li class="navigation-list col-xs-2"><a href="" class="navigation-links">Events &amp; Exhibitions</a></li>
                 </ul>
             </nav>
             <div class="search-cont col-xs-2">
                 <form action="" class="search-form">
-                    <input type="text" class="search-input">
-                    <span class="search-icon"></span>
+                    <div class="input-wrapper">
+                        <input type="text" class="search-input" placeholder="Search">
+                        <span id="input-search-icon" class="search-icon"><i class="icon-search"></i></span>
+                    </div>
                 </form>
             </div>
         </div>
         <div class="library-logo-cont col-xs-2">
-            <img src="../assets/images/library-logo.png" alt="National Library of Israel" class="library-logo">
+            <img width="137" src="../assets/images/library-logo.png" alt="National Library of Israel" class="library-logo">
         </div>
     </header>
 
@@ -133,19 +135,22 @@
         </section>
     </main>
 
-
-    <footer class="app-footer">
+    <div>${require('./footer.html')}</div>
+    
+    <!-- <footer class="app-footer">
         <div class="footer-wrapper">
             <div class="social-media-cont">
-                
+                <i class="footer-icons icon-facebook-squared"></i>
+                <i class="footer-icons icon-twitter"></i>
+                <i class="footer-icons icon-email"></i>
             </div>
             <div class="copyright-wrapper">
                 <p class="copyright-text">
-                        &copy; 2017 Bridge to Europe. All Rights Reserved.
+                    &copy; 2017 Bridge to Europe. All Rights Reserved.
                 </p>
             </div>
         </div>
-    </footer>
+    </footer> -->
         
     <script src="./assets/js/vendor/jquery-1.10.2.min.js"></script>
     <script src="assets/js/commons.js"></script>

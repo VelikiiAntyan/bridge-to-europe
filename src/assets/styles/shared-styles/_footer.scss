@@ -1,9 +1,23 @@
 .app-footer{
     text-align: center;
     background-color: #D7D7D7;
+    padding: 1.375rem;
 
     .copyright-text{
         margin: 0;
+    }
+
+    .footer-icons{
+        font-size: 3rem;
+        margin: 0.5rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &::before{
+            margin: 0;
+        }
     }
 }
 

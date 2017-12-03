@@ -1,0 +1,1 @@
+webpackJsonp([10],{"./footer.js":function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s=o("./assets/styles/styles.scss");o.n(s);o(!function(){var e=new Error('Cannot find module "html-loader!./templates/footer.html"');throw e.code="MODULE_NOT_FOUND",e}())}},["./footer.js"]);

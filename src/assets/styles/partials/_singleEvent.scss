@@ -28,24 +28,84 @@
             width:43%;
             margin-right: 1.25rem;
 
+            
+            @include mobile{
+
+                width: 100% !important;
+                border: none !important;
+                margin: 0 !important;
+                
+                .calender-icons-container{
+                    display: none;
+                }
+            }
+
+        }
+        
+        .event-register-wrapper{
             > strong, > p, > address, {
                 margin: 1.25rem 0;
             } 
         }
-    
+        
         .event-description{
+            width: 100% !important;
+            border: none !important;
             width:57%;
+
+            @include mobile{
+                    width: 100% !important;
+                    border: none !important;
+                }
+                
+                padding-top: 0 !important;
+        
+                .calender-icons-container{
+                    display: block !important;
+                }
+            }
+
+            .calender-icons-container{
+                display: none;
+            }
         }
 
         .event-register, .event-description{
             border: 1px solid black;
             padding: 1.25rem;
         }
-    }
 
-    footer{
+    .calender-icons-container{
         text-align: center;
         margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    
+    
+    .singleEvent-main-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .event-description{
+       
+    }
+
+    .event-register{
+
+       
+        
+    }
+    
+    .event-register-wrapper{
+        padding: 1rem 0;
+        border-top: 1px solid lightgray; 
+        border-bottom: 1px solid lightgray;
     }
 
 }

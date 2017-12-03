@@ -17,9 +17,11 @@
 
     .library-logo-cont{
         text-align: right;
+
+        @include mobile{
+            display: none;
+        }
     }
-
-
 
 }
 
@@ -43,21 +45,21 @@
     background-color: #EEEEEE;
 }
 
-@media (max-width: 768px) {
-  .header-center{
-    display: none;
-  }
+.website-logo-cont{
 
-
+    @include mobile{
+        padding: 0;
+    }
 }
 
-@media (max-width: 1200px) {
-  .website-logo-cont{
-    padding: 0;
-  }
-
-  .library-logo-cont{
-    display: none;
-  }
+.header-center{
+    @include mobile{
+        display: none;
+    }
 }
 
+.header-wrapper{
+    @include mobile{
+        width: 100%;
+    }
+}

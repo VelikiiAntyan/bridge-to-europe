@@ -17,95 +17,110 @@
     p{
         margin:0;
     }
-
-    .singleEvent-main-wrapper{
-
-        display: flex;
-        align-items: flex-start;
-        padding: 1.25rem 0;
-
-        .event-register{
-            width:43%;
-            margin-right: 1.25rem;
-
-            
-            @include mobile{
-
-                width: 100% !important;
-                border: none !important;
-                margin: 0 !important;
-                
-                .calender-icons-container{
-                    display: none;
-                }
-            }
-
-        }
-        
-        .event-register-wrapper{
-            > strong, > p, > address, {
-                margin: 1.25rem 0;
-            } 
-        }
-        
-        .event-description{
-            width: 100% !important;
-            border: none !important;
-            width:57%;
-
-            @include mobile{
-                    width: 100% !important;
-                    border: none !important;
-                }
-                
-                padding-top: 0 !important;
-        
-                .calender-icons-container{
-                    display: block !important;
-                }
-            }
-
-            .calender-icons-container{
-                display: none;
-            }
-        }
-
-        .event-register, .event-description{
-            border: 1px solid black;
-            padding: 1.25rem;
-        }
-
-    .calender-icons-container{
-        text-align: center;
-        margin-top: 1rem;
-    }
-
 }
 
-@media (max-width: 768px) {
+.singleEvent-main-wrapper{
 
-    
-    
-    .singleEvent-main-wrapper{
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem 0;
+
+    @include mobile{
         display: flex;
         flex-direction: column;
         padding: 0;
     }
 
-    .event-description{
-       
+    .calender-icons-container{
+
+        text-align: center;
+        margin-top: 1rem;
+        
+        @include tablet{
+            display: none;
+        }
+        
+        @include desktop{
+            display: none;
+        }
     }
 
     .event-register{
+        width:43%;
+        margin-right: 1.25rem;
 
-       
         
+        @include mobile{
+            width: 100% !important;
+            border: none !important;
+            margin: 0 !important;
+        }
+
     }
     
     .event-register-wrapper{
-        padding: 1rem 0;
-        border-top: 1px solid lightgray; 
-        border-bottom: 1px solid lightgray;
-    }
 
+        > strong, > p, > address, {
+            margin: 1.25rem 0;
+        }
+
+        @include mobile{
+            padding: 1rem 0;
+            border-top: 1px solid lightgray; 
+            border-bottom: 1px solid lightgray;
+        }
+
+        .calender-icons-container{
+            @include mobile{
+                display: none;
+            }
+
+            @include tablet{
+                display: block;
+            }
+
+            @include desktop{
+                display: block;
+            }
+        }
+
+    }
+    
+    .event-description{
+        width: 100% !important;
+        border: none !important;
+        width:57%;
+
+        @include mobile{
+            width: 100% !important;
+            border: none !important;
+            padding-top: 0 !important;
+            
+            .calender-icons-container{
+                display: block;
+            }
+        }
+    }
+        
+}
+
+.event-register, .event-description{
+    border: 1px solid black;
+    padding: 1.25rem;
+}
+
+    
+.add-to-calender-wrapper{
+    
+    @include mobile{
+        padding: 1rem 0;
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        text-align: left;
+    }
+}
+
+.social-media-wrapper{
+    font-size: 2rem;
+    padding: 1rem 0;
 }

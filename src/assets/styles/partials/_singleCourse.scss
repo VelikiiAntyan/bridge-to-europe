@@ -6,22 +6,41 @@
     .program-description{
         width:60%;
         padding-right: 1.25rem;
+
+        @include mobile{
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
     }
     
 }
 
 .sign-up{
+
     width:40%;
     padding-left: 1.25rem;
     
     h2{
         padding-left: 1.25rem;
+
+        @include mobile{
+            padding: 0;
+            text-align: center;
+        }
     }
     
     .form-wrapper{
         border-left: 1px solid gray;
+
+        @include mobile{
+            border: none;
+        }
     }
-    
+
     .form-input-wrapper{
         padding-left: 1.25rem;
 
@@ -30,5 +49,15 @@
             padding: 1.25rem 0;
             margin-bottom: 0.25rem;
         }
+
+        @include mobile{
+            padding: 0;
+        }
     }
+
+    @include mobile{
+        width: 100%;
+        padding: 0;
+    }
+
 }

@@ -1,15 +1,35 @@
-.singleProject-main{
-    .project-img{
+.singleProject-main-wrapper{
+
+    @include mobile{
+        padding: 0;
+    }
+    
+    @include tablet{
+        padding: 0;
         width: 100%;
     }
+}
 
-    .project-caption{
+.project-img{
+    width: 100%;
+    background-color: blue;
+}
+
+.project-caption{
+    padding: 1rem;
+}
+
+.project-figure{
+    margin: 0.75rem 0;
+    background-color: #eee;
+
+    @include mobile{
+        margin: 0;
+    }
+}
+
+.description{
+    header{
         padding: 1rem;
     }
-
-    .project-figure{
-        margin: 0.75rem 0;
-        background-color: #eee;
-    }
-
 }

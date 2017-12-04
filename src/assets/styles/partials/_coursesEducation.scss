@@ -3,4 +3,12 @@
     p{
         margin: 2rem 0;    
     }
+
+    @include mobile{
+        p{
+            margin: 1rem 0;
+        }
+    }
+
+
 }

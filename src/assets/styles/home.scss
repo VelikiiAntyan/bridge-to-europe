@@ -2,12 +2,13 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-@media (max-width: 768px) {
-
 .shared-block-footer-wrapper{
-  padding: 0;
+  
+  @include mobile{
+    
+    padding: 0;
+  }
 }
 
-}
 
 

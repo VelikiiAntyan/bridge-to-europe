@@ -1,5 +1,4 @@
 #nav-icon{
-  // display: none;
     display: flex;
     width: 20px;
     background-color: white;
@@ -28,8 +27,14 @@
       margin: 4px 0;
       border-radius: 2px;
       background-color:gray;
+    }
 
+    @include tablet{
+      display: none;
+    }
 
+    @include desktop{
+      display: none;
     }
 }
 

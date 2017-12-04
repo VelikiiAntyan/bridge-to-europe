@@ -1,4 +1,4 @@
-import './assets/styles/styles.scss';
+// import './assets/styles/contact.scss';
 
-require('html-loader!./templates/contact.html');
-console.log('contact page');
+// require('html-loader!./templates/contact.html');
+// console.log('contact page');

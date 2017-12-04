@@ -1,3 +1,3 @@
-import './assets/styles/styles.scss';
+import './assets/styles/coursesEducation.scss';
 
 require('html-loader!./templates/coursesEducation.html');

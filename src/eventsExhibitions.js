@@ -1,3 +1,3 @@
-import './assets/styles/styles.scss';
+import './assets/styles/eventsExhibitions.scss';
 
 require('html-loader!./templates/eventsExhibitions.html');

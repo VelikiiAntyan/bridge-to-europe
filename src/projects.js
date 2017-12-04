@@ -1,3 +1,3 @@
-import './assets/styles/styles.scss';
+import './assets/styles/projects.scss';
 
 require('html-loader!./templates/projects.html');

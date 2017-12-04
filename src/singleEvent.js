@@ -1,3 +1,3 @@
-import './assets/styles/styles.scss';
+import './assets/styles/singleEvent.scss';
 
 require('html-loader!./templates/singleEvent.html');

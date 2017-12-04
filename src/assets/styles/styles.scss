@@ -2,18 +2,20 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-@import 'shared-styles/header';
-@import 'shared-styles/footer';
-@import 'shared-styles/shared';
-@import 'shared-styles/mobile-menu';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/shared';
+@import 'partials/mobile-menu';
 
-@import 'partials/about';
-@import 'partials/eventsExhibitions';
-@import 'partials/singleEvent';
-@import 'partials/coursesEducation';
-@import 'partials/singleCourse';
-@import 'partials/projects';
-@import 'partials/singleProject';
+@import './vendor/fontello.css';
+// @import './vendor/bootstrap.min.css';
+
+// @import 'modules/about';
+// @import 'modules/eventsExhibitions';
+// @import 'modules/singleEvent';
+// @import 'modules/coursesEducation';
+// @import 'modules/singleCourse';
+// @import 'modules/projects';
+// @import 'modules/singleProject';
 
 
-@import './shared-styles/fontello.css';

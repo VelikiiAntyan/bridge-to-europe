@@ -2,103 +2,159 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-.about-main{
+// .about-main{
 
-    .about-cont{
-        margin-bottom: 5rem;
-    }
+.about-cont{
+    margin-bottom: 5rem;
 
-    .content-row{
-        display: flex;
+    @include mobile{
+        margin: 0;
     }
+}
+
+.content-row{
+    display: flex;
+}
+
+.img-wrapper, .text-wrapper{
+    width:50%;
+}
+
+.img-wrapper{
+    background-color: red;
+    display: block;
+
+    @include mobile{
+        display: none;
+    }
+}
+
+.form-item{
+    width: 100%;
+}
+
+.contact-us-section-wrapper{
+
+    padding: 4.7rem 0;
+    display: flex;
     
-    .img-wrapper, .text-wrapper{
-        width:50%;
+    .headings{
+        margin-top: 0;
+    }
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+}
+
+.explanatory-text{
+    margin: 0;
+}
+
+.NLI-map{
+    display: block;
+    // background-color: red;
+    height: 200px;
+}
+
+.contact-us-cont{
+    background-color: $main-background-color;
+
+    #email{
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+.come-visit{
+    padding-left: 1rem;
+
+    // @include mobile{
+    //     display: none;
+    // }
+
+
+    @include mobile{
+
+        padding-top: 1rem !important;
+
+        .headings{
+            display: none;
+        }
+
+    }
+
+    
+    
+    .map-wrapper{
+        border-left: 1px solid yellow;
+        margin-left: -1rem;
+        
+        @include mobile{
+            border: none;
+            margin: 0;
+        }
+        
+        .NLI-map{
+            padding-left: 1rem;
+            
+            @include mobile{
+                padding: 0;
+            }
+        }
+    }
+
+    
+}
+
+.content-row:nth-child(1){
+
+    .text-wrapper{
+        margin: 0 0.625rem 0.625rem 0;
     }
     
     .img-wrapper{
-        background-color: red;
-        display: block;
-    }
-    
-    .form-item{
-        width: 100%;
-    }
-    
-    .contact-us-section-wrapper{
-        display: flex;
-    }
-    
-    .contact-sections{
-        width: 50%;
-    }
-
-    .explanatory-text{
-        margin: 0;
-    }
-
-    .NLI-map{
-        display: block;
-        // background-color: red;
-        height: 200px;
-    }
-
-    .contact-us-cont{
-        background-color: lightgray;
-
-        #email{
-            padding: 1rem 0;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-us-section-wrapper{
-
-            padding: 4.7rem 0;
-
-            .headings{
-                margin-top: 0;
-            }
-        }
-
-    }
-
-    .come-visit{
-        padding-left: 1rem;
-
-
-        .map-wrapper{
-            border-left: 1px solid yellow;
-            margin-left: -1rem;
-
-            .NLI-map{
-                padding-left: 1rem;
-            }
-        }
-    }
-
-    .content-row:nth-child(1){
-
-        .text-wrapper{
-            margin: 0 0.625rem 0.625rem 0;
-        }
-        
-        .img-wrapper{
-            margin: 0 0 0.625rem 0.625rem;
-        }
-    }
-    
-    .content-row:nth-child(2){
-        
-        .text-wrapper{
-            margin: 0.625rem 0 0 0.625rem;
-        }
-        
-        .img-wrapper{
-            margin: 0.625rem 0.625rem 0 0;
-        }
-    }
-
-    .contact-us{
-        padding-right: 2rem;
+        margin: 0 0 0.625rem 0.625rem;
     }
 }
+
+.content-row:nth-child(2){
+    
+    .text-wrapper{
+        margin: 0.625rem 0 0 0.625rem;
+    }
+    
+    .img-wrapper{
+        margin: 0.625rem 0.625rem 0 0;
+    }
+}
+
+.contact-us{
+    padding-right: 2rem;
+
+    // @include mobile{
+    //     padding: 0;
+    //     width: 100%;
+    // }
+}
+
+
+.text-wrapper{
+    @include mobile{
+        margin: 1rem 0 !important;
+        width: 100%;
+    }
+}
+
+.contact-sections{
+    width: 50%;
+
+    @include mobile{
+        padding: 0;
+        width: 100%;
+    }
+}
+// }

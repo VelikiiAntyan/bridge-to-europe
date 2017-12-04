@@ -70,8 +70,8 @@
 
         @include mobile{
             padding: 1rem 0;
-            border-top: 1px solid lightgray; 
-            border-bottom: 1px solid lightgray;
+            border-top: 1px solid $main-background-color; 
+            border-bottom: 1px solid $main-background-color;
         }
 
         .calender-icons-container{
@@ -95,6 +95,10 @@
         border: none !important;
         width:57%;
 
+        h2{
+            margin: 0;
+        }
+
         @include mobile{
             width: 100% !important;
             border: none !important;
@@ -105,26 +109,19 @@
             }
         }
     }
-        
 }
 
 .event-register, .event-description{
     border: 1px solid black;
     padding: 1.25rem;
 }
-
     
 .add-to-calender-wrapper{
     
     @include mobile{
         padding: 1rem 0;
-        border-bottom: 1px solid lightgray;
-        border-top: 1px solid lightgray;
+        border-bottom: 1px solid $main-background-color;
+        border-top: 1px solid $main-background-color;
         text-align: left;
     }
-}
-
-.social-media-wrapper{
-    font-size: 2rem;
-    padding: 1rem 0;
 }

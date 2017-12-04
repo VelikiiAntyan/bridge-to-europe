@@ -82,3 +82,11 @@
         width: 100%;
     }
 }
+
+.search-cont{
+
+    @include mobile{
+        display: none;
+    }
+
+}

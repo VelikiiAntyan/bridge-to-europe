@@ -4,14 +4,16 @@
 
 .coursesEducation-main-wrapper{
 
+    background-color: $main-background-color;
+
     p{
-        margin: 2rem 0;    
+        margin: 1rem 0;    
     }
 
-    @include mobile{
-        p{
-            margin: 1rem 0;
-        }
-    }
+    // @include mobile{
+    //     p{
+    //         margin: 1rem 0;
+    //     }
+    // }
 
 }

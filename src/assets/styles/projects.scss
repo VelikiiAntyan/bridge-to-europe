@@ -2,6 +2,10 @@
 @import 'base/mixins';
 @import 'base/variables';
 
+.projects-main{
+    background-color: $main-background-color;
+}
+
 .projects-main-wrapper{
 
     p{

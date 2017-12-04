@@ -12,12 +12,17 @@
 }
 
 .eventsExhibitions-main{
-
     
-
-    .eventsExhibitions-main-wrapper{
-        background-color: gray;
-    }
-
+    background-color: $main-background-color;
+    
 }
 
+.eventsExhibitions-main-wrapper{
+    padding: 0;
+    // background-color: gray;
+}
+
+
+.eventsExhibitions-past-events-wrapper{
+    background-color: $secondary-background-color;
+}

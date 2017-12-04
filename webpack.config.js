@@ -3,21 +3,22 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
     name: 'commons',
     filename: 'assets/js/commons.js'
 });
 
+
 const config = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         index: './index.js',
-        header: './header.js',
-        footer: './footer.js',
+        // header: './header.js',
+        // footer: './footer.js',
         about: './about.js',
         contact: './contact.js',
-        header: './header.js',
         eventsExhibitions: './eventsExhibitions.js',
         singleEvent: './singleEvent.js',
         coursesEducation: './coursesEducation.js',
@@ -116,7 +117,16 @@ const config = {
     plugins: [
         new webpack.NamedModulesPlugin(),
         extractCSS,
-        extractCommons
+        extractCommons,
+
+        // new HtmlWebpackPlugin({
+        //     template: 
+        // './src/templates/shared-templates/footer.ejs',
+        //     // inject: 'body',
+        //     // hash: true,
+        //     title: 'TEST!!!!!!!!!!!',
+        //   }),
+
     ]
 };
 

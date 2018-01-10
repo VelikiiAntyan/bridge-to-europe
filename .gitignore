@@ -3,3 +3,5 @@ dev/reports/
 npm-debug.log
 docs/sass
 /project
+yarn-error.log
+npmrc

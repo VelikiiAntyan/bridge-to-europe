@@ -10,15 +10,11 @@ const extractCommons = new webpack.optimize.CommonsChunkPlugin({
     filename: 'assets/js/commons.js'
 });
 
-
 const config = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         index: './index.js',
-        // header: './header.js',
-        // footer: './footer.js',
         about: './about.js',
-        contact: './contact.js',
         eventsExhibitions: './eventsExhibitions.js',
         singleEvent: './singleEvent.js',
         coursesEducation: './coursesEducation.js',
@@ -91,42 +87,12 @@ const config = {
                 test: /\.(woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000' 
             }
-            // {
-            //     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            //     loader: "url-loader?limit=10000&mimetype=application/font-woff"
-            // }
-        //     {
-        //         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        //         use: [
-        //         'file-loader'
-        //         ]
-        //     },
-
-        // ],
-        // loaders: [
-        //     {
-        //         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        //         loader: "url-loader?limit=10000&mimetype=application/font-woff"
-        //     },
-        //     {
-        //         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        //         loader: "file-loader"
-        //     },
         ]
     },
     plugins: [
         new webpack.NamedModulesPlugin(),
         extractCSS,
         extractCommons,
-
-        // new HtmlWebpackPlugin({
-        //     template: 
-        // './src/templates/shared-templates/footer.ejs',
-        //     // inject: 'body',
-        //     // hash: true,
-        //     title: 'TEST!!!!!!!!!!!',
-        //   }),
-
     ]
 };
 

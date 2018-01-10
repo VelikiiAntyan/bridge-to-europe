@@ -11,8 +11,7 @@
     "htmllint": "node ./dev/html-validator.js",
     "sasslint": "node ./node_modules/sass-lint/bin/sass-lint.js -v -q",
     "test": "npm run buildapp && karma start && npm run eslint && npm run accessibility && npm run htmllint && npm run sasslint",
-    "build": "rm -rf dist/ && webpack -p",
-    "buildapp": "webpack -p",
+    "build": "webpack -p",
     "start:dev": "webpack-dev-server",
     "sassdoc": "node ./dev/sassdoc.js",
     "docsserver": "npm run sassdoc && webpack-dev-server --port 8010 --config webpack.docs.config.js --content-base ./docs/ --open"

@@ -1,1 +1,2 @@
 webpackJsonp([7],{"../node_modules/html-loader/index.js!./templates/about.html":function(s,t){s.exports='module.exports = __webpack_public_path__ + "about.html";'},"./about.js":function(s,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var o=e("./assets/styles/about.scss"),a=(e.n(o),e("./assets/styles/styles.scss"));e.n(a);e("../node_modules/html-loader/index.js!./templates/about.html")},"./assets/styles/about.scss":function(s,t){}},["./about.js"]);
+//# sourceMappingURL=about.bundle.js.map

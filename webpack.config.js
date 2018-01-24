@@ -26,6 +26,7 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'assets/js/[name].bundle.js'
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
@@ -51,16 +52,12 @@ const config = {
                     },
                     {
                         loader: 'postcss-loader',
-                        options: {
-                            sourceMap: true,
-                            postCSSOptions
-                        }
-                        // options: postCSSOptions
+                        options: postCSSOptions
                     },
                     {
                         loader: 'sass-loader',
                         options: {
-                            sourceMap: true,
+                            sourceMap: true
                         }
                     }
                 ])

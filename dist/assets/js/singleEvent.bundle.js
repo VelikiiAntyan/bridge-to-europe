@@ -1,1 +1,2 @@
 webpackJsonp([2],{"../node_modules/html-loader/index.js!./templates/singleEvent.html":function(s,e){s.exports='module.exports = __webpack_public_path__ + "singleEvent.html";'},"./assets/styles/singleEvent.scss":function(s,e){},"./singleEvent.js":function(s,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=t("./assets/styles/singleEvent.scss"),l=(t.n(n),t("./assets/styles/styles.scss"));t.n(l);t("../node_modules/html-loader/index.js!./templates/singleEvent.html")}},["./singleEvent.js"]);
+//# sourceMappingURL=singleEvent.bundle.js.map

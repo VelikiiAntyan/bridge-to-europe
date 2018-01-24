@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
     name: 'commons',
@@ -99,7 +100,8 @@ const config = {
     plugins: [
         new webpack.NamedModulesPlugin(),
         extractCSS,
-        extractCommons
+        extractCommons,
+        // new BundleAnalyzerPlugin()
     ]
 };
 

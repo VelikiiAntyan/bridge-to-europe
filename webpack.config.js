@@ -44,14 +44,24 @@ const config = {
                 test: /\.scss$/,
                 loader: extractCSS.extract([
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
                     },
                     {
                         loader: 'postcss-loader',
-                        options: postCSSOptions
+                        options: {
+                            sourceMap: true,
+                            postCSSOptions
+                        }
+                        // options: postCSSOptions
                     },
                     {
-                        loader: 'sass-loader'
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                        }
                     }
                 ])
             },

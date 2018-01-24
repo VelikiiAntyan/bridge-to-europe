@@ -3,15 +3,16 @@
     background-color: red;
     display: flex;
     padding-bottom: 2.5rem;
+    color: $color-header;
 
     h1{
         @include header
     }
 }
 
-.shared-block-wrapper{
-    margin: 1rem  0;
-}
+// .shared-block-wrapper{
+//     margin: 1rem  0;
+// }
 
 .shared-heading{
     margin: 0;
@@ -20,7 +21,8 @@
 .block-img{
     display:block;
     background-color: lightblue;
-    width: 60%;
+    width: 43%;
+    height: 370px;
 
     @include mobile{
         width: 100%;
@@ -29,19 +31,22 @@
 }
 
 .shared-block-details{
-    margin: 1.25rem;
-    width: 40%;
+    // margin: 1.25rem;
+    margin-left: 2.5rem;
+    height: 100%;
+    border-bottom: 1px solid black;
+    // width: 40%;
 
     @include mobile{
         margin: 0;
-        padding: 1.25rem;
-        width: 100%;
+        // padding: 1.25rem;
+        // width: 100%;
     }
 }
 
 .shared-block-wrapper{
     display: flex;
-    background-color: white;
+    background-color: $main-background-color;
 
     @include mobile{
         display: flex;
@@ -51,7 +56,9 @@
 
 .shared-block-footer-wrapper{
     text-align: right;
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-top: 1.25rem;
+    // padding-right: 1.5rem;
 }
 
 .shared-btn{
@@ -84,4 +91,53 @@
     padding: 1rem 0;
     text-align: center;
 }
+
+.shared-details-wrapper{
+    width: 55%;
+    
+    @include mobile {
+        width: 100%;
+        padding: 1.25rem;
+    }
+}
+
+.main-shared{
+    padding-top: 3.375rem;
+    background-color: $main-background-color;
+    
+    @include mobile {
+        padding: 1.5rem 0.25rem 0.25rem 0.25rem;
+    }
+}
+
+header {
+    color: $color-header;
+}
+
+main {
+ background-color:  $main-background-color;  
+}
+
+.shared-block-spacer {
+    padding: 3.75rem 0;
+    @include mobile {
+        display: none;
+    }
+}
+
+.sign-up .btn{
+    @include action-button;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+
+
+// .row-wrapper, .main-content {
+//     padding: 0 !important;
+// }
+
 

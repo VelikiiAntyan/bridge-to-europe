@@ -31,3 +31,47 @@ $desktop-width: 1200px;
     display: flex;
     padding-bottom: 2.5rem;
 }
+
+@mixin action-button {
+  color: white;
+  background-color: black; 
+}
+
+@mixin input-shared {
+  border: 1px solid black;
+  outline: none;
+  color: black;
+};
+
+@mixin inputPlaceholder() {
+  $selector: '';
+  $prefixes: (
+      moz: "::-moz",
+      webkit: "::-webkit",
+      ie: ":-ms"
+  );
+  @each $prop, $value in $prefixes {
+      @if $prop != "moz" {
+          $selector: #{$value}-input-placeholder;
+      } @else {
+          $selector: #{$value}-placeholder;
+      }
+      @if & {
+          &#{$selector} {
+              @content;
+          }
+      } @else {
+          #{$selector} {
+              @content;
+          }
+      }
+  }
+  &::placeholder {
+    @content;
+  }
+}
+
+@include inputPlaceholder() {
+  color: black;
+}
+

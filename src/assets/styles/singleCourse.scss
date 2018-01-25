@@ -132,6 +132,8 @@
 
     .icon-right-open{
 
+        font-size: 30px;
+
         @include tablet {
             display: none;    
         }
@@ -140,6 +142,13 @@
             display: none;    
         }
 
-        font-size: 30px;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.icon-toggle {
+    transition: all 1s; 
 }

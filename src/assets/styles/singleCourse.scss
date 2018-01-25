@@ -7,10 +7,42 @@
     display: flex;
     align-items: flex-start;
 
+    p {
+        margin: 0;
+        @include mobile {
+            margin: 0.5rem 0;
+        }
+    }
+
+    h2 {
+        margin: 1.875rem 0;
+        @include mobile {
+            margin: 0;
+        }
+    }
+
+    h3 {
+        margin: 2.5rem 0;
+        @include mobile {
+            margin: 0;
+            // border: 1px solid black;
+            // border-radius: 7px;
+        }
+    }
+
     @include mobile{
         flex-direction: column;
     }
     
+}
+
+.section-info-wrapper {
+    @include mobile {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 0.75rem 0;
+    }
 }
 
 .program-description{
@@ -90,5 +122,24 @@
 .singleCourse-main {
     h2, h3 {
         font-weight: bold;
+    }
+}
+
+.section-info-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon-right-open{
+
+        @include tablet {
+            display: none;    
+        }
+
+        @include desktop {
+            display: none;    
+        }
+
+        font-size: 30px;
     }
 }

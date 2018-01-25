@@ -5,8 +5,20 @@
     padding-bottom: 2.5rem;
     color: $color-header;
 
-    h1{
-        @include header
+    // h1{
+    //     @include header
+    // }
+    
+    // .header-wrapper {
+    //     @include header
+    // }
+}
+
+main {
+    .rectangle {
+        @include mobile {
+            display: none;
+        }
     }
 }
 
@@ -154,6 +166,10 @@ main {
     text-transform: uppercase;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .color-featured {
     color: $color-featured;
 }
@@ -189,8 +205,53 @@ main {
     color: $color-events;
     border-color: $color-events;
 }
+.featured-action {
+    color: $color-featured;
+    border-color: $color-featured;
+}
 
+.project-action {
+    color: $color-projects;
+    border-color: $color-projects;
+}
 
+.education-action {
+    color: $color-courses-education;
+    border-color: $color-courses-education;
+}
+
+.event-action {
+    color: $color-events;
+    border-color: $color-events;
+}
+
+.featured-border {
+    border-color: $color-featured;
+}
+
+.project-border {
+    border-color: $color-projects;
+}
+
+.education-border {
+    border-color: $color-courses-education;
+}
+
+.event-border {
+    border-color: $color-events;
+}
+
+.rectangle {
+    width: 235px;
+    height: 10px;
+    background-color: $color-rectangle;
+}
+
+.featured-content {
+    .rectangle {
+        background-color: $color-featured;
+    }
+}
 
 
 // .row-wrapper, .main-content {

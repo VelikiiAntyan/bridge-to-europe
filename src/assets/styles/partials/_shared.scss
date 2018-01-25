@@ -26,7 +26,7 @@
 
     @include mobile{
         width: 100%;
-        height: 200px;
+        height: 280px;
     }
 }
 
@@ -39,6 +39,7 @@
 
     @include mobile{
         margin: 0;
+        border: none;
         // padding: 1.25rem;
         // width: 100%;
     }
@@ -54,18 +55,38 @@
     }
 }
 
-.shared-block-footer-wrapper{
-    text-align: right;
-    padding: 1.5rem;
-    padding-top: 1.25rem;
-    // padding-right: 1.5rem;
+.shared-block-footer {
+    
+    @include mobile {
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .shared-block-footer-wrapper{
+        text-align: right;
+        padding: 1.5rem;
+        padding-top: 1.25rem;
+        
+        @include mobile {
+            text-align: center;
+            border-bottom: 1px solid;
+        }
+        
+        
+        // padding-right: 1.5rem;
+    }
+
 }
+
+
+
 
 .shared-btn{
     width: 100%;
     color: $secondary-background-color;
-    background-color: #169BD5;
+//     background-color: #169BD5;
     margin-top: 1rem;
+    border-radius: 20px;
 
     @include mobile{
         padding: 1rem;
@@ -106,7 +127,7 @@
     background-color: $main-background-color;
     
     @include mobile {
-        padding: 1.5rem 0.25rem 0.25rem 0.25rem;
+        padding: 1.5rem 0.25rem 0 0.25rem;
     }
 }
 
@@ -131,6 +152,42 @@ main {
 
 .uppercase{
     text-transform: uppercase;
+}
+
+.color-featured {
+    color: $color-featured;
+}
+
+.color-project {
+    color: $color-projects;
+}
+
+.color-education {
+    color: $color-courses-education;
+}
+
+.color-event {
+    color: $color-events;
+}
+
+.featured-action {
+    color: $color-featured;
+    border-color: $color-featured;
+}
+
+.project-action {
+    color: $color-projects;
+    border-color: $color-projects;
+}
+
+.education-action {
+    color: $color-courses-education;
+    border-color: $color-courses-education;
+}
+
+.event-action {
+    color: $color-events;
+    border-color: $color-events;
 }
 
 

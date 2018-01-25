@@ -9,3 +9,10 @@ require('html-loader!./templates/index.html');
 
 let indexPage = new HelloWorld('Hello from index page!');
 console.log(indexPage.sayHello());
+
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+    });
+  });
+  

@@ -10,24 +10,54 @@
   }
 }
 
-#index-page h2{
-  font-style: italic;
-  padding-top: 0.5rem; 
-  padding-bottom: 1rem; 
-}
+#index-page {
+  h2 {
+    font-style: italic;
+    padding-top: 0.5rem; 
+    padding-bottom: 1rem; 
+  }
 
-#index-page h3{
-  font-weight: bold;
-  padding-bottom: 3.25rem;
+  h3{
+    font-weight: bold;
+    padding-bottom: 3.25rem;
+  
+    @include mobile {
+      padding-bottom: 1.25rem;
+    }
+  }
+
+  .shared-btn {
+
+    height: 2.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    @include tablet {
+      display: none;
+    }
+
+    @include desktop {
+      display: none;
+    } 
+  }
+
+  .btn-wrapper {
+    padding: 0 0.5rem;
+  }
+  
 }
 
 #logo-img, .desktop-navigation-links {
   @include mobile {
     display: none;
   }
-} 
+}
 
-
-
-
+.main-header {
+  .btn {
+    color: $color-header;
+    border-color: $color-header;
+  }
+}
 

@@ -1,3 +1,21 @@
+@font-face {
+    src: url('~/dist/assets/fonts/OpenSansHebrew-Regular.ttf');
+    // src: url('../../fonts/OpenSansHebrew-Regular.ttf');
+    font-family: 'OpenSansHebrew';
+}
+
+@font-face {
+    src: url('~/dist/assets/fonts/CrimsonText-SemiBoldItalic.ttf');
+    // src: url('../../fonts/OpenSansHebrew-Regular.ttf');
+    font-family: 'CrimsonText-SemiBoldItalic';
+}
+
+// @font-face {
+//     src: url('~/dist/assets/fonts/OpenSans.woff');
+//     // src: url('../../fonts/OpenSansHebrew-Regular.ttf');
+//     font-family: 'OpenSans';
+// }
+
 body,html{
     margin: 0;
     padding: 0;
@@ -9,6 +27,7 @@ html{
 
 body{
     font-size: 100%;
+    font-family: 'OpenSansHebrew';
 }
 
 address{

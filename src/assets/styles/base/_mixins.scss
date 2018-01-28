@@ -1,6 +1,7 @@
 $mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$large-screen-width: 1450px;
 
 @mixin mobile{
     @media (max-width: $mobile-width){
@@ -16,6 +17,12 @@ $desktop-width: 1200px;
 
 @mixin desktop {
   @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media (max-width: $large-screen-width) {
     @content;
   }
 }
@@ -72,6 +79,6 @@ $desktop-width: 1200px;
 }
 
 @include inputPlaceholder() {
-  color: black;
+  color: white;
 }
 

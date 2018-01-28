@@ -1,3 +1,12 @@
 .container{
-    padding: 0 !important;
+
+    @include desktop {
+        padding: 0 !important;
+    }
+
+    @include mobile {
+        padding: 0 !important;
+    }
+
+    
 }

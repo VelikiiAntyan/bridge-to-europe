@@ -4,6 +4,11 @@
 
 // .about-main{
 
+.about-header {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/about.jpg') no-repeat center center;
+    background-size: cover;
+}
+
 .about-cont{
     margin-bottom: 5rem;
 
@@ -86,8 +91,6 @@
         }
 
     }
-
-    
     
     .map-wrapper{
         border-left: 1px solid yellow;

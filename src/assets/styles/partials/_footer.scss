@@ -1,17 +1,33 @@
 .app-footer{
-    text-align: center;
-    color: $color-footer;
-    background-color: $secondary-background-color;
-    padding: 1.375rem;
+    
+    color: $color-footer-text;
+    background-color: $color-footer;
+    padding: 5.875rem 0 4.0625rem 0;
+    
+    @include mobile {
+        text-align: center;
+        padding: 5.875rem 1.875rem 4.0625rem 1.875rem;
+    }
 
+    h2 {
+        font-weight: bold;
+        line-height: 25px !important;
+        font-size: 1.25rem !important;
+
+        @include mobile {
+            color: #C67E00;
+        }
+    }
 
     .copyright-text{
         margin: 0;
+        font-size: 0.75rem;
+        line-height: 17px;
     }
 
     .footer-icons{
-        font-size: 3rem;
-        margin: 0.5rem;
+        font-size: 1.5rem;
+        margin: 1.5rem;
 
         &:hover{
             cursor: pointer;
@@ -21,5 +37,90 @@
             margin: 0;
         }
     }
+
+    .footer-upper {
+        display: flex;
+        flex-direction: row;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .footer-img {
+            height: 65px;
+            width: 184px;
+            background-color: red;
+
+            @include mobile {
+                margin: 0 auto;
+            }
+        }
+
+        .footer-upper-section {
+            width: 33.3%;
+
+            @include mobile {
+                width: 100%;
+            }
+
+            .footer-img:first-child {
+                margin-top: 1.25rem;
+                margin-bottom: 2.875rem;
+            }
+        }
+    }
+
+    input{
+        width: 100%;
+        background-color: $color-footer;
+        // outline: none;
+        border: none;
+    }
+    
+    input:not([type=submit]) {
+        border-bottom: 2px solid $color-footer-text;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-contact-btn {
+        background: linear-gradient(180deg, #C67E00 0%, #905B00 100%);
+        border-radius: 10px;
+        height: 2.5rem;
+    }
+
+    .footer-lower {
+        text-align: center;
+    }
+
+    .view-map {
+        font-weight: bold;
+        line-height: 26px;
+        color: inherit;
+    }
+
+    address {
+        margin-bottom: 3.5rem;
+    }
+
+    .social-media-cont {
+        margin: 6.875rem 0 2rem 0;
+    }
+
+    .footer-copyright-breaker {
+        @include tablet {
+            display: none;
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+    
+    .nli {
+        @include mobile {
+            display: none;
+        }
+    }
+
 }
 

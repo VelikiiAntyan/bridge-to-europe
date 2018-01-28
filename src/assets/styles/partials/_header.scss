@@ -1,18 +1,10 @@
 .app-header {
 
-    background-color: red;
-    
-    background-image: url('~/dist/assets/images/main-header.jpg');
-    background-repeat: no-repeat;
-    // background-position: center center;
-    // background: url('./ec8f8c93172517cc39bd4c0559a9f4fd.jpg') no-repeat center center;
-    background-size: cover; 
+    // height: 350px;
 
-    // display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin: 0;
+    // background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover; 
 
     .row{
         margin: 0;
@@ -41,6 +33,26 @@
 
 }
 
+.shared-header{
+    height: 350px;
+    background-color: red;
+    display: flex;
+    padding-bottom: 2.5rem;
+    color: $color-header;
+
+    .desktop-navigation-links {
+        padding: 1.25rem 0;
+        margin-bottom: 4rem;
+    }
+    // h1{
+    //     @include header
+    // }
+    
+    // .header-wrapper {
+    //     @include header
+    // }
+}
+
 .desktop-navigation-links{
     display: flex;
     align-items: center;
@@ -52,7 +64,13 @@
 
 #logo-img {
     position: absolute;
-    width: 80px; 
+    width: 80px;
+    left: 36px;
+    top: 20px;
+
+    @include large-screen {
+        display: none;
+    }
 }
 
 // .navigation-list {
@@ -108,3 +126,5 @@
     }
 
 }
+
+

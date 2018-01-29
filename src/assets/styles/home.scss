@@ -12,12 +12,6 @@
 
 #index-page {
 
-  .title-breaker {
-    @include mobile {
-      display: none;
-    }
-  }
-
   .icon-right-open{
     font-size: 18px;
 
@@ -62,6 +56,7 @@
   h3 {
     font-style: italic;
     padding: 1.25rem 0;
+    padding-bottom: 0;
     font-family: 'CrimsonText-SemiBoldItalic';
     // font-weight: 600;
     line-height: 41px;
@@ -74,7 +69,7 @@
     }
   }
   
-  h4{
+  h4 {
     font-size: 3rem;
     font-weight: bold;
     padding-bottom: 1.25rem;
@@ -95,16 +90,6 @@
     @include mobile {
       font-size: 1.0625rem;
     }
-  }
-
-  .shared-btn {
-
-    height: 2.625rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-
-    
   }
 
   .desktop-navigation-links {
@@ -142,10 +127,10 @@
     } 
   }
 
-  .btn-wrapper {
-    margin-top: auto;
-    padding-bottom: 1.875rem;
-  }
+  // .btn-wrapper {
+  //   margin-top: auto;
+  //   padding-bottom: 1.875rem;
+  // }
 
 
 

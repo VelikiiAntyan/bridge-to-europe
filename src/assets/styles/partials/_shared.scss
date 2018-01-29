@@ -6,6 +6,10 @@ main {
             display: none;
         }
     }
+
+    p {
+        line-height: 25px;
+    }
 }
 
 // .shared-block-wrapper{
@@ -99,7 +103,7 @@ main {
 
 
 .shared-btn{
-    width: 100%;
+    width: 50%;
     color: $secondary-background-color;
     font-size: 0.9375rem;
     font-weight: 800;
@@ -107,6 +111,10 @@ main {
 //     background-color: #169BD5;
     margin-top: 1rem;
     border-radius: 15px;
+    height: 2.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 
     @include mobile{
         padding: 1rem;
@@ -116,6 +124,7 @@ main {
 .past-event .event-btn{
     display: none;
 }
+
 
 .event-btn {
     background: linear-gradient(180deg, #DD5019 0%, #FF6300 100%);
@@ -139,7 +148,7 @@ main {
 }
 
 .shared-details-wrapper{
-    width: 55%;
+    // width: 55%;
     
     @include mobile {
         width: 100%;
@@ -180,6 +189,22 @@ main {
     @include action-button;
 }
 
+.btn-wrapper {
+    margin-top: auto;
+    padding-bottom: 1.875rem;
+}
+
+.title-breaker {
+    @include mobile {
+      display: none;
+    }
+}
+
+.custom-container {
+    width: 585px;
+    margin: 0 auto;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -204,6 +229,14 @@ main {
     color: $color-events;
 }
 
+.color-about {
+    color: $color-about;
+}
+
+.color-ephemera {
+    color: $color-ephemera;
+}
+
 .featured-action {
     color: $color-featured;
     border-color: $color-featured;
@@ -215,31 +248,12 @@ main {
 }
 
 .education-action {
-    color: $color-courses-education;
-    border-color: $color-courses-education;
+    color: $color-education-content;
+    border-color: $color-education-content;
 }
 
 .event-action {
     color: $color-events;
-    border-color: $color-events;
-}
-.featured-action {
-    color: $color-featured;
-    border-color: $color-featured;
-}
-
-.project-action {
-    color: $color-projects;
-    border-color: $color-projects;
-}
-
-.education-action {
-    color: $color-courses-education;
-    border-color: $color-courses-education;
-}
-
-.event-action {
-    color: $color-events-text;
     border-color: $color-events;
 }
 
@@ -252,7 +266,7 @@ main {
 }
 
 .education-border {
-    border-color: $color-courses-education;
+    border-color: $color-education-content;
 }
 
 .event-border {
@@ -263,6 +277,7 @@ main {
     width: 235px;
     height: 10px;
     background-color: $color-rectangle;
+    margin-bottom: 0.625rem;
 }
 
 .featured-content {

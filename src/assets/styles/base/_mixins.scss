@@ -50,6 +50,18 @@ $large-screen-width: 1450px;
   color: black;
 };
 
+@mixin main-title {
+    font-size: 3.375rem;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+@mixin default-title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 65px;
+}
+
 @mixin inputPlaceholder() {
   $selector: '';
   $prefixes: (

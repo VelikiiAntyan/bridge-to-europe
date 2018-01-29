@@ -2,10 +2,23 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-.singleCourse-main-wrapper{
+#single-course {
 
-    display: flex;
-    align-items: flex-start;
+    h1 {
+        @include main-title;
+        color: $color-courses-education;
+    }
+    
+    h2 {
+        // margin-bottom: 2rem;
+        @include default-title;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        font-weight: 800;
+        line-height: 30px;
+    }
 
     p {
         margin: 0;
@@ -14,141 +27,181 @@
         }
     }
 
-    h2 {
-        margin: 1.875rem 0;
-        @include mobile {
+    .color-featured {
+        line-height: 41px;
+        margin-bottom: 0.75rem;
+    }
+
+
+    .program-features-wrapper {
+        background-color: $color-past-events-bkg;
+        margin-bottom: 1.875rem;
+    }
+
+    main {
+        ul {
+            list-style: none;
+            padding: 1rem;
             margin: 0;
         }
-    }
-
-    h3 {
-        margin: 2.5rem 0;
-        @include mobile {
-            margin: 0;
-            // border: 1px solid black;
-            // border-radius: 7px;
-        }
-    }
-
-    @include mobile{
-        flex-direction: column;
-    }
-    
-}
-
-.section-info-wrapper {
-    @include mobile {
-        border: 1px solid black;
-        border-radius: 10px;
-        padding: 1rem;
-        margin: 0.75rem 0;
-    }
-}
-
-.program-description{
-    width:60%;
-    padding-right: 1.25rem;
-
-    @include mobile{
-        width: 100%;
-        padding: 0;
-        border-bottom: 1px solid $main-background-color;
-    }
-}
-
-.sign-up{
-
-    @include mobile{
-        width: 100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    width:40%;
-    padding-left: 1.25rem;
-    
-    h2{
-        // padding-left: 1.25rem;
-
-        @include mobile{
-            padding: 0;
-            text-align: center;
-        }
-    }
-    
-}
-
-.form-wrapper{
-    // border-left: 1px solid gray;
-
-    @include mobile{
-        border: none;
-    }
-}
-
-.form-input-wrapper{
-    // padding-left: 1.25rem;
-    input{
-        border-radius: 5px;
-        width: 100%;
-        height: 3.125rem;
-        margin: 0.625rem 0 !important;
-    }
-
-    input[type="submit"]{
-        margin: 0;
         
+        li {
+            padding-left: 1em; 
+            text-indent: -.7em;
+            display: flex;
+            align-items: center;
+        }
+        
+        li::before {
+            content: "• ";
+            color: $color-featured;
+            font-size: 32px;
+        }
+
     }
 
 
-    input:not([type="submit"]) {
-        padding-left: 1rem;
-        @include input-shared;
-        @include inputPlaceholder()
-        // padding: 1rem 0;
-        // margin-bottom: 0.25rem;
-    }
-
-    // input:not([type="submit"])::-webkit-input-placeholder{
-    //     color: black;
+    // h3 {
+    //     margin: 2.5rem 0;
+    //     @include mobile {
+    //         margin: 0;
+    //         // border: 1px solid black;
+    //         // border-radius: 7px;
+    //     }
     // }
 
-    @include mobile{
-        padding: 0;
+    .singleCourse-header{
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/single-course.jpg') no-repeat center center;
+        background-size: cover;
     }
-}
 
-.singleCourse-main {
-    h2, h3 {
-        font-weight: bold;
-    }
-}
+    .singleCourse-main-wrapper{
 
-.section-info-title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .icon-right-open{
-
-        font-size: 30px;
-
-        @include tablet {
-            display: none;    
+        display: flex;
+        align-items: flex-start;
+    
+    
+        @include mobile{
+            flex-direction: column;
         }
-
-        @include desktop {
-            display: none;    
+        
+    }
+    
+    .section-info-wrapper {
+        @include mobile {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 0.75rem 0;
         }
-
     }
-
-    &:hover {
-        cursor: pointer;
+    
+    // .program-description{
+    //     width:60%;
+    //     padding-right: 1.25rem;
+    
+    //     @include mobile{
+    //         width: 100%;
+    //         padding: 0;
+    //         border-bottom: 1px solid $main-background-color;
+    //     }
+    // }
+    
+    // .sign-up{
+    
+    //     @include mobile{
+    //         width: 100%;
+    //         padding: 0;
+    //         display: flex;
+    //         flex-direction: column-reverse;
+    //     }
+    
+    //     width:40%;
+    //     padding-left: 1.25rem;
+        
+    //     h2{
+    //         // padding-left: 1.25rem;
+    
+    //         @include mobile{
+    //             padding: 0;
+    //             text-align: center;
+    //         }
+    //     }
+        
+    // }
+    
+    // .form-wrapper{
+    //     // border-left: 1px solid gray;
+    
+    //     @include mobile{
+    //         border: none;
+    //     }
+    // }
+    
+    // .form-input-wrapper{
+    //     // padding-left: 1.25rem;
+    //     input{
+    //         border-radius: 5px;
+    //         width: 100%;
+    //         height: 3.125rem;
+    //         margin: 0.625rem 0 !important;
+    //     }
+    
+    //     input[type="submit"]{
+    //         margin: 0;
+            
+    //     }
+    
+    
+    //     input:not([type="submit"]) {
+    //         padding-left: 1rem;
+    //         @include input-shared;
+    //         @include inputPlaceholder()
+    //         // padding: 1rem 0;
+    //         // margin-bottom: 0.25rem;
+    //     }
+    
+    //     // input:not([type="submit"])::-webkit-input-placeholder{
+    //     //     color: black;
+    //     // }
+    
+    //     @include mobile{
+    //         padding: 0;
+    //     }
+    // }
+    
+    // .singleCourse-main {
+    //     h2, h3 {
+    //         font-weight: bold;
+    //     }
+    // }
+    
+    .section-info-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    
+        .icon-right-open{
+    
+            font-size: 30px;
+    
+            @include tablet {
+                display: none;    
+            }
+    
+            @include desktop {
+                display: none;    
+            }
+    
+        }
+    
+        // &:hover {
+        //     cursor: pointer;
+        // }
     }
-}
-
-.icon-toggle {
-    transition: all 1s; 
+    
+    .icon-toggle {
+        transition: all 1s; 
+    }
 }

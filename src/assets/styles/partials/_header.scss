@@ -1,6 +1,6 @@
 .app-header {
 
-    // height: 350px;
+    height: 30.3125rem;
 
     // background-color: red;
     background-repeat: no-repeat;
@@ -34,15 +34,33 @@
 }
 
 .shared-header{
-    height: 350px;
-    background-color: red;
+    height: 30.3125rem;
+    // height: 350px;
+    // background-color: red;
     display: flex;
-    padding-bottom: 2.5rem;
+    padding-bottom: 10.9375rem;
     color: $color-header;
+
+    
+    h1 {
+        font-size: 3.375rem;
+        font-weight: 800;
+        line-height: 74px;
+    }
+
+    p {
+        font-size: 1.1875rem;
+        line-height: 30px;
+        margin-top: 1.25rem;
+    }
 
     .desktop-navigation-links {
         padding: 1.25rem 0;
         margin-bottom: 4rem;
+
+        @include mobile {
+            display: none;
+        }
     }
     // h1{
     //     @include header
@@ -119,12 +137,12 @@
     }
 }
 
-.search-cont{
+// .search-cont{
 
-    @include mobile{
-        display: none;
-    }
+//     @include mobile{
+//         display: none;
+//     }
 
-}
+// }
 
 

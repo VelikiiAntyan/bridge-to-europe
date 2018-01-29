@@ -2,21 +2,113 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-.eventsExhibitions-header{
+#events {
 
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/events.jpg') no-repeat center center;
-    background-size: cover;
+    h1{
+        @include main-title;
+        color: $color-events;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        font-weight: 800;
+        line-height: 41px;
+    }
+
+    .shared-heading {
+        color: $color-events;
+    }
     
-    @include header-layout;
+    .event-header {
+        color: #B3B3B3;
+        font-size: 3.5rem;
+        font-weight: 300;
+        letter-spacing: -2px;
+        line-height: 38px;
+        margin-top: 7.1875rem;
+        margin-bottom: 3.125rem;
+    }
 
-    // h1{
-    //     @include header;
-    // }
+    strong {
+        font-size: 1.875rem;
+        font-weight: 800;
+        line-height: 30px;
+        margin: 1.25rem 0;
+    }
+    
+    .eventsExhibitions-header{
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/events.jpg') no-repeat center center;
+        background-size: cover;
+        @include header-layout;
+    }
+
+    .eventsExhibitions-past-events-wrapper {
+        background-color: $color-past-events-bkg;
+        
+        .shared-block-wrapper {
+            background-color: $color-past-events-bkg;
+        }
+    }
+    .eventsExhibitions-main {
+
+        .footer-wrapper {
+            text-align: right;
+            margin-top: 1.5rem;
+            
+            a {
+                color: $color-events;
+            }
+        }
+
+    }
+
+    .exhibition-kit {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .exhibition-kit-wrapper {
+        height: 371px;
+        opacity: 0.85;
+        background: linear-gradient(270deg, rgba(0,0,0,0) 0%, #000000 100%), linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%), linear-gradient(0deg, #0400FF 0%, #0066FF 100%);
+        color: white;
+        padding: 3.75rem;
+
+        h2 {
+            @include default-title;
+        }
+
+        .btn {
+            background-color: $color-projects;
+            border-radius: 10px;
+            font-size: 0.9375rem;
+            font-weight: 800;
+            line-height: 20px;
+            height: 2.75rem;
+            width: 63%;
+        }
+    }
+
+    .event-btn {
+
+        @include tablet{
+            display: none;
+        }
+
+        @include desktop{
+            display: none;
+        }
+    }
+
+    
+    .eventsExhibitions-main{
+        padding-bottom: 0;
+    }
 }
 
-.eventsExhibitions-main{
-    background-color: $main-background-color;
-}
 
 // .eventsExhibitions-main-wrapper{
 //     padding: 0;

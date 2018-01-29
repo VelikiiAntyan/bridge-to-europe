@@ -22,6 +22,7 @@ const config = {
         singleCourse: './singleCourse.js',
         projects: './projects.js',
         singleProject: './singleProject.js',
+        404: './404.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

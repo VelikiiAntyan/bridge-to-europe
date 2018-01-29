@@ -12,22 +12,59 @@
     <link rel="stylesheet" href="assets/styles/singleCourse.bundle.css">
 
 </head>
-<body>
-    <div class="shared-header singleCourse-header">
-        <div class="header-wrapper container">
-            <div class="rectangle"></div>
-            <h1>Paidea Program</h1>
+<body id="single-course">
+    <header class="app-header">
+        <div class="shared-header singleCourse-header">
+            <div class="header-wrapper container">
+                <a href="./">
+                    <img id="logo-img" src="../assets/images/bridge-to-europe.png" alt="Bridge To Europe">
+                </a>
+                <nav class="desktop-navigation-links">
+                    <ul class="navigation-list-wrapper">
+                        <li class="navigation-list"><a href="about.html" class="navigation-links">about</a></li>
+                        <li class="navigation-list"><a href="projects.html" class="navigation-links">projects</a></li>
+                        <li class="navigation-list"><a href="coursesEducation.html" class="navigation-links">education and courses</a></li>
+                        <li class="navigation-list"><a href="eventsExhibitions.html" class="navigation-links">events and exhibitions</a></li>
+                        <li class="navigation-list"><a href="#footer" class="navigation-links">contact us</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="rectangle"></div> -->
+                <h1>Paidea <br class="title-breaker"> Program</h1>
+                <div class="hamburger" id="nav-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <main class="singleCourse-main main-shared">
-        <div class="singleCourse-main-wrapper container main-shared">
+    <main class="singleCourse-main main-shared ">
+        <div class="singleCourse-main-wrapper custom-container">
             <section class="program-description">
-                <div class="rectangle"></div>
-                <h2>This one year program</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, tempore. Odio deserunt eligendi excepturi ad nobis accusantium beatae porro quo? Eum provident dignissimos cupiditate ad repellendus aspernatur excepturi et laudantium.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, tempore. Odio deserunt eligendi excepturi ad nobis accusantium beatae porro quo? Eum provident dignissimos cupiditate ad repellendus aspernatur excepturi et laudantium.</p>
+                <!-- <div class="rectangle"></div> -->
+                <h2>The One-Year Jewish Studies Program</h2>
+                <p>At the heart of Paideia is the One Year Jewish Studies Program, dedicated to the study and interdisciplinary interpretation of the textual sources that have served as the wellsprings of Jewish civilization. The program offers a combination of traditional textual study methodology (hevruta), an academic and critical approach to interpretation, and an applied dimension answering to contemporary needs, making it a unique program in Jewish studies.</p>
+                <div class="program-featured-wrapper">
+                    <div class="program-featured-title-wrapper">
+                        <div class="shared-block-spacer"></div>
+                        <h3 class="color-featured">Program features:</h3>
+                        <div class="program-features-wrapper">
+                            <ul class="bold">
+                                <li>this is a list</li>
+                                <li>this is a list</li>
+                                <li>this is a list</li>
+                                <li>this is a list</li>
+                                <li>this is a list</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Studies are conducted five days a week, seven hours per day, under the instruction of world-renowned faculty. The language of instruction is English.
+                </p>
                 <div class="section-info-wrapper">
+                    <div class="shared-block-spacer"></div>
                     <div class="section-info-title-wrapper">
                         <h3>Jksdvl</h3>
                         <i class="icon-right-open icon-toggle"></i>
@@ -36,6 +73,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
                 </div>
                 <div class="section-info-wrapper">
+                    <div class="shared-block-spacer"></div>
                     <div class="section-info-title-wrapper">
                         <h3>Jksdvl</h3>
                         <i class="icon-right-open icon-toggle"></i>
@@ -43,6 +81,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
                 </div>
                 <div class="section-info-wrapper">
+                    <div class="shared-block-spacer"></div>
                     <div class="section-info-title-wrapper">
                         <h3>Jksdvl</h3>
                         <i class="icon-right-open icon-toggle"></i>
@@ -50,7 +89,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
                 </div>
             </section>
-            <section class="sign-up">
+            <!-- <section class="sign-up">
                 <div class="sign-up-wrapper">
                     <h2>Sign Up</h2>
                     <div class="form-wrapper">
@@ -58,17 +97,10 @@
                             <input type="text" name="" id="" placeholder="full name">
                             <input type="email" name="" id="" placeholder="email address">
                             <input type="submit" class="btn shared-btn" value="apply now">
-                            <!-- <input type="checkbox" name="" id="">I Agree to recieve /updates and notifications from Bridge to Europe -->
                         </div>
                     </div>
                 </div>
-                <!-- <div class="social-media-wrapper">
-                    <i class="icon-facebook"></i>
-                    <i class="icon-twitter"></i>
-                    <i class="icon-mail"></i>
-                    <i class="icon-whatsapp"></i>
-                </div> -->
-            </section>
+            </section> -->
         </div>
     </main>
 

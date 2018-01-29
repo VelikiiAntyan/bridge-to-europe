@@ -2,126 +2,169 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-.singleEvent-header{
+#single-event {
 
-    @include header-layout;
-
-    h1{
-        @include header
+    h1 {
+        @include main-title;
+        color: $color-events;
+    }
+    
+    h2 {
+        margin-bottom: 2rem;
+        @include default-title;
     }
 
-    .header-wrapper{
-        padding: 0;
+    p {
+        margin: 0;
     }
 
-}
-
-.singleEvent-main{
-
-    p{
-        margin:0;
+    .event-description-row {
+        margin-bottom: 2rem;
     }
-}
 
-.singleEvent-main-wrapper{
+    .singleEvent-header{
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/single-event.jpg') no-repeat center center;
+        background-size: cover;
+    }
 
-    display: flex;
-    align-items: flex-start;
-    padding: 1.25rem 0;
-
-    @include mobile{
+    .singleEvent-main-wrapper{
+    
         display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .calender-icons-container{
-
-        text-align: center;
-        margin-top: 1rem;
-        
-        @include tablet{
-            display: none;
-        }
-        
-        @include desktop{
-            display: none;
-        }
-    }
-
-    .event-register{
-        width:43%;
-        margin-right: 1.25rem;
-
-        
-        @include mobile{
-            width: 100% !important;
-            border: none !important;
-            margin: 0 !important;
-        }
-
-    }
+        align-items: flex-start;
+        padding: 1.25rem 0;
     
-    .event-register-wrapper{
-
-        > strong, > p, > address, {
-            margin: 1.25rem 0;
-        }
-
         @include mobile{
-            padding: 1rem 0;
-            border-top: 1px solid $main-background-color; 
-            border-bottom: 1px solid $main-background-color;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
         }
-
-        .calender-icons-container{
-            @include mobile{
-                display: none;
-            }
-
-            @include tablet{
-                display: block;
-            }
-
-            @include desktop{
-                display: block;
-            }
-        }
-
-    }
     
-    .event-description{
-        width: 100% !important;
-        border: none !important;
-        width:57%;
-
-        h2{
-            margin: 0;
-        }
-
-        @include mobile{
-            width: 100% !important;
-            border: none !important;
-            padding-top: 0 !important;
+        // .calender-icons-container{
+    
+        //     text-align: center;
+        //     margin-top: 1rem;
             
-            .calender-icons-container{
-                display: block;
+        //     @include tablet{
+        //         display: none;
+        //     }
+            
+        //     @include desktop{
+        //         display: none;
+        //     }
+        // }
+    
+        .event-register{
+            width:43%;
+            margin-left: 6.875rem;
+            padding: 1.25rem;
+            padding-top: 1.875rem;
+            background-color: $color-past-events-bkg;
+
+            h3 {
+                font-size: 1.5rem;
+                color: $color-events;
+                line-height: 38px;
+            }
+
+            i {
+                font-size: 32px;
+            }
+
+            .event-btn {
+                width: 100%;
+            }
+
+            .explanatory-text {
+                font-size: 1.125rem;
+                font-weight: 600;
+                line-height: 27px;
+                margin-bottom: 5rem;
+            }
+
+            .timable-section {
+                margin-bottom: 2rem;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+    
+            
+            @include mobile{
+                width: 100% !important;
+                border: none !important;
+                margin: 0 !important;
+            }
+    
+        }
+        
+        // .event-register-wrapper{
+    
+        //     // > strong, > p, > address, {
+        //     //     margin: 1.25rem 0;
+        //     // }
+    
+        //     // @include mobile{
+        //     //     padding: 1rem 0;
+        //     //     border-top: 1px solid $main-background-color; 
+        //     //     border-bottom: 1px solid $main-background-color;
+        //     // }
+    
+        //     .calender-icons-container{
+        //         @include mobile{
+        //             display: none;
+        //         }
+    
+        //         @include tablet{
+        //             display: block;
+        //         }
+    
+        //         @include desktop{
+        //             display: block;
+        //         }
+        //     }
+    
+        // }
+        
+        .event-description{
+            width: 100% !important;
+            border: none !important;
+            width:57%;
+    
+            // h2{
+            //     margin: 0;
+            // }
+
+            h3 {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+    
+            @include mobile{
+                width: 100% !important;
+                border: none !important;
+                padding-top: 0 !important;
+                
+                // .calender-icons-container{
+                //     display: block;
+                // }
             }
         }
     }
+    
+    // .event-register, .event-description{
+    //     border: 1px solid black;
+    //     // padding: 1.25rem;
+    // }
+        
+    // .add-to-calender-wrapper{
+        
+    //     @include mobile{
+    //         padding: 1rem 0;
+    //         border-bottom: 1px solid $main-background-color;
+    //         border-top: 1px solid $main-background-color;
+    //         text-align: left;
+    //     }
+    // }
 }
 
-.event-register, .event-description{
-    border: 1px solid black;
-    padding: 1.25rem;
-}
-    
-.add-to-calender-wrapper{
-    
-    @include mobile{
-        padding: 1rem 0;
-        border-bottom: 1px solid $main-background-color;
-        border-top: 1px solid $main-background-color;
-        text-align: left;
-    }
-}

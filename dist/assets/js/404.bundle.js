@@ -1,0 +1,2 @@
+webpackJsonp([8],{"../node_modules/html-loader/index.js!./templates/404.html":function(s,e){s.exports='module.exports = __webpack_public_path__ + "404.html";'},"./404.js":function(s,e,t){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var l=t("./assets/styles/styles.scss"),o=(t.n(l),t("./assets/styles/404.scss"));t.n(o);t("../node_modules/html-loader/index.js!./templates/404.html")},"./assets/styles/404.scss":function(s,e){}},["./404.js"]);
+//# sourceMappingURL=404.bundle.js.map

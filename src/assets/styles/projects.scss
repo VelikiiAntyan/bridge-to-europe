@@ -2,23 +2,50 @@
 @import 'base/mixins';
 @import 'base/variables';
 
-.projects-main{
-    background-color: $main-background-color;
-}
+#projects {
 
-.projects-main-wrapper{
-
-    p{
-        margin: 2rem 0;    
-        
-        @include mobile{
-            margin: 1rem 0;    
-        }
-
+    h1 {
+        @include main-title;
+        color: $color-projects;
     }
-}
 
-.projects-header {
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/projects.jpg') no-repeat center center;
-    background-size: cover;
+    h2 {
+       @include default-title;
+    }
+
+    // .header-wrapper {
+
+       
+    // }
+
+    .rectangle {
+        // height: 10px;
+        width: 47px;
+        border: 5px solid $color-featured;
+        
+    }
+
+    .projects-header {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/projects.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    .projects-main{
+        background-color: $main-background-color;
+
+        // p {
+        //     line-height: 25px;
+        // }
+    }
+    
+    // .projects-main-wrapper{
+    // 	// line-height: 25px;
+    //     // p {
+    //     //     margin: 2rem 0;    
+    //     //     @include mobile{
+    //     //         margin: 1rem 0;    
+    //     //     }
+    //     // }
+    // }
+    
 }

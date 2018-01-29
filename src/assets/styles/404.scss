@@ -1,0 +1,55 @@
+@import 'base/main';
+@import 'base/mixins';
+@import 'base/variables';
+
+#error {
+
+    h1 {
+        font-size: 7.5rem;
+        font-weight: 800;
+        line-height: 163px;
+        color: $color-featured;
+        margin: 0 3.4375rem 0 0;
+    }
+
+    h2 {
+        font-size: 3.75rem;
+        font-weight: 300;
+        line-height: 66px;
+        margin-top: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 36px;
+    }
+    
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/404.jpg') no-repeat center center;
+    background-size: cover;
+    header, .shared-header {
+        height: auto;
+        background: initial;
+        padding: 0;
+    }
+
+    .desktop-navigation-links {
+        // margin: 0;
+    }
+
+    .column-wrapper {
+        display: flex;
+    }
+
+    main {
+        color: white;
+        background-color: transparent;
+    }
+
+    .btn {
+        color: white;
+        background: linear-gradient(0deg, #C67E00 0%, #905B00 100%);
+        margin-bottom: 3.125rem;
+        margin-top: 2.5rem;
+    }
+}

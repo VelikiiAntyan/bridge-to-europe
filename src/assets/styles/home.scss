@@ -65,7 +65,7 @@
     @include mobile {
       font-size: 1.25rem;
       line-height: 25px;
-      padding-bottom: 0;
+      padding: 0;
     }
   }
   
@@ -141,7 +141,7 @@
     margin: 0;
 
     @include mobile {
-      padding: 4.0625rem 1.875rem 5rem 1.875rem;
+      padding: 4.375rem 1.875rem 5rem 1.875rem;
     }
   }
   

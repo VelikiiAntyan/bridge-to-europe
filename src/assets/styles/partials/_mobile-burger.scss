@@ -1,6 +1,6 @@
 #nav-icon{
     display: flex;
-    width: 32px;
+    width: 20px;
     // background-color: $secondary-background-color;
     // margin: 2px 0;
     border-radius: 2px;
@@ -11,8 +11,8 @@
     position: absolute;
     top: -12px;
     bottom: auto;
-    right: 0;
-    margin: 1rem 0.5rem 1rem 1rem;
+    left: 0;
+    margin: 1.25rem 0.5rem 1rem 1rem;
     height: 40px;
     z-index: 20;
 
@@ -23,7 +23,7 @@
     span{
       display: flex;
       // width: 32px;
-      height: 3px;
+      height: 2px;
       margin: 2.5px 0;
       border-radius: 2px;
       background-color:white;
@@ -58,10 +58,10 @@
 }
 
 .hamburger.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-11px) rotate(-45deg);
-  -ms-transform: translateY(-11px) rotate(-45deg);
-  -o-transform: translateY(-11px) rotate(-45deg);
-  transform: translateY(-11px) rotate(-45deg);
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+  -ms-transform: translateY(-9px) rotate(-45deg);
+  -o-transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 

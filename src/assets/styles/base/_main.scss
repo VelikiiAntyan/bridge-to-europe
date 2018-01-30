@@ -9,10 +9,17 @@
     // src: url('../../fonts/OpenSansHebrew-Regular.ttf');
     font-family: 'CrimsonText-SemiBoldItalic';
 }
+
 @font-face {
     src: url('~/dist/assets/fonts/OpenSansHebrew-ExtraBold.ttf');
     font-family: 'OpenSansHebrew-ExtraBold';
 }
+
+@font-face {
+    src: url('~/dist/assets/fonts/OpenSans-Light.ttf');
+    font-family: 'OpenSans-Light';
+}
+
 
 // @font-face {
 //     src: url('~/dist/assets/fonts/OpenSans.woff');
@@ -39,8 +46,12 @@ address{
     margin: 0;
 }
 
-h2, h3{
+h2, h3, p{
     margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'OpenSansHebrew-ExtraBold';
 }
 
 

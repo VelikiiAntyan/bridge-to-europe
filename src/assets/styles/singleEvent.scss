@@ -5,17 +5,29 @@
 #single-event {
 
     h1 {
-        @include main-title;
         color: $color-events;
+        @include main-title;
+        
+        @include mobile {
+            font-size: 1.875rem;
+        }
     }
     
     h2 {
         margin-bottom: 2rem;
         @include default-title;
+        
+        @include mobile {
+            margin-bottom: 1.875rem;
+        }
     }
 
     p {
         margin: 0;
+    }
+
+    .main-shared {
+        padding: 0;
     }
 
     .event-description-row {
@@ -79,6 +91,10 @@
                 font-weight: 600;
                 line-height: 27px;
                 margin-bottom: 5rem;
+                
+                @include mobile {
+                    margin-bottom: 2.5rem;
+                }
             }
 
             .timable-section {
@@ -94,6 +110,7 @@
                 width: 100% !important;
                 border: none !important;
                 margin: 0 !important;
+                padding-bottom: 5rem;
             }
     
         }
@@ -143,7 +160,8 @@
             @include mobile{
                 width: 100% !important;
                 border: none !important;
-                padding-top: 0 !important;
+                // padding-top: 0 !important;
+                padding: 1.875rem 1.25rem 0 1.25rem;
                 
                 // .calender-icons-container{
                 //     display: block;

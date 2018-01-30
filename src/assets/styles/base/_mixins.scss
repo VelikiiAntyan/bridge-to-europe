@@ -54,13 +54,32 @@ $large-screen-width: 1450px;
     font-size: 3.375rem;
     font-weight: 800;
     line-height: 60px;
+
+    @include mobile {
+        font-size: 2.1875rem;
+        font-weight: 800;
+        line-height: 38px;
+    }
 }
 
 @mixin default-title {
     font-size: 3rem;
     font-weight: 800;
     line-height: 65px;
+
+    @include mobile {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 36px;   
+    }
 }
+
+// @mixin default-title-mobile {
+//     font-size: 30px;
+//     font-weight: 800;
+//     line-height: 36px;
+// }
+
 
 @mixin inputPlaceholder() {
   $selector: '';

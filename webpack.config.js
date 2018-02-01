@@ -102,6 +102,7 @@ const config = {
         new webpack.NamedModulesPlugin(),
         extractCSS,
         extractCommons,
+        
         // new BundleAnalyzerPlugin()
     ]
 };

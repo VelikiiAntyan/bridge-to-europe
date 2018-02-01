@@ -3,7 +3,7 @@
     height: 30.3125rem;
 
     @include mobile {
-        // height: 20rem;
+        height: 16.5625rem;
     }
 
     // background-color: red;
@@ -39,15 +39,13 @@
 
 .shared-header{
     height: 30.3125rem;
-    // height: 350px;
-    // background-color: red;
     display: flex;
-    padding-bottom: 10.9375rem;
+    // padding-bottom: 10.9375rem;
     color: $color-header;
 
     @include mobile {
         padding: 2.1875rem; 
-
+        height: 16.5625rem;
     }
 
     
@@ -107,6 +105,7 @@
     top: 0;
     right: 0;
     margin: 1rem;
+    z-index: 20;
 
     @include mobile {
         display: block;
@@ -129,18 +128,18 @@
 //     font-size: 20px;
 // }
 
-[class^="col-xs-"]{
+[class^="col-xs-"] {
     padding: 0;
     margin: 0;
 }
 
-.main-content-wrapper{
+.main-content-wrapper {
     background-color: #EEEEEE;
 }
 
 .website-logo-cont{
 
-    @include mobile{
+    @include mobile {
         padding: 0;
     }
 }
@@ -149,13 +148,13 @@
 
     display: flex;
 
-    @include mobile{
+    @include mobile {
         display: none;
     }
 }
 
 .header-wrapper{
-    @include mobile{
+    @include mobile {
         width: 100%;
     }
 }

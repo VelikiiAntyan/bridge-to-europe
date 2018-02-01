@@ -1,6 +1,8 @@
 import './assets/styles/singleCourse.scss';
 import './assets/styles/styles.scss';
 
+import MenuToggle from './assets/js/common/mobile-menu';
+
 require('html-loader!./templates/singleCourse.html');
 
 $('.section-info-title-wrapper').on('click', function () {

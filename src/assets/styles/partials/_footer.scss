@@ -24,6 +24,11 @@
         margin: 0;
         font-size: 0.75rem;
         line-height: 17px;
+
+        @include mobile {
+            font-size: 0.625rem;
+            line-height: 14px;
+        }
     }
 
     .footer-icons{
@@ -90,12 +95,22 @@
     input:not([type=submit]) {
         border-bottom: 2px solid $color-footer-text;
         margin-bottom: 2.5rem;
+
+        @include mobile {
+            border-bottom: 1.5px solid $color-footer-text;
+        }
     }
 
+    
     .footer-contact-btn {
+        font-size: 0.9375rem;
         background: linear-gradient(180deg, #C67E00 0%, #905B00 100%);
         border-radius: 10px;
         height: 2.5rem;
+        
+        @include mobile {
+            border-radius: 15px;
+        }
     }
 
     .footer-lower {
@@ -114,6 +129,17 @@
 
     .social-media-cont {
         margin: 6.875rem 0 2rem 0;
+        
+        @include mobile {
+            margin-top: 6.25rem;
+        }
+    }
+
+    .form-wrapper {
+
+        @include mobile {
+            margin-bottom: 6.25rem;
+        }
     }
 
     .footer-copyright-breaker {
@@ -129,6 +155,12 @@
     .nli {
         @include mobile {
             display: none;
+        }
+    }
+
+    .contact-us {
+        @include mobile {
+            margin-top: 4.375rem;
         }
     }
     

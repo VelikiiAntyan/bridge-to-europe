@@ -273,6 +273,11 @@ main {
     border-color: $color-events;
 }
 
+.about-action {
+    color: $color-about;
+    border-color: $color-about;
+}
+
 .featured-border {
     border-color: $color-featured !important;
 }
@@ -287,6 +292,10 @@ main {
 
 .event-border {
     border-color: $color-events !important;
+}
+
+.about-border {
+    border-color: $color-about !important;
 }
 
 .rectangle {
@@ -305,6 +314,31 @@ main {
 .js-open {
     transform: rotate(90deg);
 }
+
+.js-hide {
+    display: none;
+}
+
+.mobile-item {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+
+.desktop-item {
+    @include mobile {
+        display: none;
+    }
+}
+
+.desktop-header-text {
+    @include mobile {
+        display: none;
+    }
+}
+
+
 
 // .row-wrapper {
 //     @include mobile {

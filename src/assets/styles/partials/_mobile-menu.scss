@@ -1,3 +1,5 @@
+
+
 #mobile-menu{
     position: fixed;
     top:0;
@@ -6,22 +8,10 @@
     left:0;
     height: 100vh;
     width: 100vw;
-    z-index: 50;
+    z-index: 2;
     color: $color-mobile-menu;
     background-color: $color-mobile-menu-bkg;
-
-    #nav-icon {
-        position: static; 
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-pack: center;
-        width: 32px;
-        border-radius: 2px;
-        margin: 0;
-        height: initial;
-        margin-right: 1rem;
-    }
+    padding-top: 4.375rem;
 
     .mobile-menu-header {
         padding: 0.5rem;

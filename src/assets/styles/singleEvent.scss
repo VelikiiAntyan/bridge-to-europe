@@ -27,7 +27,10 @@
     }
 
     .main-shared {
-        padding: 0;
+
+        @include mobile {
+            padding: 0;
+        }
     }
 
     .event-description-row {

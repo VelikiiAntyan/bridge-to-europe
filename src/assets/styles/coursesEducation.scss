@@ -4,15 +4,9 @@
 
 #education {
 
-    
-
     h1 {
         @include main-title;
         color: $color-courses-education;
-
-        // @include mobile {
-        //     @include main-title-mobile;
-        // }
     }
 
     h2 {
@@ -46,6 +40,7 @@
 
     .block-img{
         @include mobile{
+            padding: 0;
             padding-top: 1.5rem;
         }
     }
@@ -65,51 +60,30 @@
         @include mobile {
             width: 100%;
             padding: 1.25rem;
-            // border-bottom: 2px solid rgba(0,0,0,.1);
             margin: 0;
             border: none;
             padding: 0 1.25rem;
-            // border-bottom: 2px solid rgba(0,0,0,.1);
-            // margin-bottom: 0.25rem;
-            
+        }
+    }
+
+    .mobile-img {
+        display: none;
+
+        @include mobile {
+            display: block;
         }
     }
     
-    
+    .desktop-img {
 
-    // .coursesEducation-main-wrapper{
-        
-    
-    //     // background-color: $main-background-color;
-    
-    //     // p{
-    //     //     margin: 2.75rem 0;    
-    //     // }
-    
-    //     // h2, h3 {
-    //     //     margin-top: 1.25rem;
-    //     // }
-    
-    //     // .shared-block-details i {
-    //     //     margin-left: 1.75rem;
-    //     //     font-size: 25px;
-    //     // }
-    
-    //     // .shared-block-details i::before { 
-    //     //     margin: 0;
-    //     // }
-    
-    //     // .shared-block-details a {
-    //     //     color: black;
-    //     // }
-    
-    //     // @include mobile{
-    //     //     p{
-    //     //         margin: 1rem 0;
-    //     //     }
-    //     // }
-    
-    // }
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .main-shared {
+        padding-bottom: 0;
+    }
 
 }
 

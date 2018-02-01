@@ -14,7 +14,21 @@
     left: 0;
     margin: 1.25rem 0.5rem 1rem 1rem;
     height: 40px;
-    z-index: 20;
+    z-index: 20 !important;
+
+  //   #nav-icon {
+  //     position: static; 
+  //     display: flex;
+  //     -ms-flex-direction: column;
+  //     flex-direction: column;
+  //     -ms-flex-pack: center;
+  //     width: 20px;
+  //     border-radius: 2px;
+  //     margin: 0;
+  //     height: initial;
+  //     margin-right: 1rem;
+  //     z-index: 20;
+  // }
 
     &:hover{
       cursor: pointer;
@@ -29,8 +43,6 @@
       background-color:white;
     }
 
-    
-
     @include tablet{
       display: none;
     }
@@ -38,6 +50,14 @@
     @include desktop{
       display: none;
     }
+}
+
+.hamburger {
+  z-index: 20 !important;
+}
+
+.hamburger.is-active {
+  z-index: 20 !important;
 }
 
 .hamburger .line{

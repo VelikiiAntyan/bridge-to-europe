@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Home - Bridge to Europe</title>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="./assets/styles/vendor/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./assets/styles/commons.bundle.css">
     <link rel="stylesheet" href="./assets/styles/index.bundle.css">
@@ -21,6 +21,9 @@
         <!-- <div class="header-center container"> -->
             <a href="./">
                 <img id="logo-img" src="../assets/images/logos/nli-logo-desktop.png" alt="Bridge To Europe">
+            </a>
+            <a href="./">
+                <img id="mobile-logo" src="../assets/images/logos/nli-logo-mobile.png" alt="Bridge To Europe">
             </a>
             <nav class="desktop-navigation-links container">
                 <ul class="navigation-list-wrapper">
@@ -53,7 +56,7 @@
         </div> -->
         <!-- <div class="library-logo-cont ">
         </div> -->
-        <img id="mobile-logo" src="../assets/images/logos/nli-logo-mobile.png" alt="Bridge To Europe">
+        
         <div class="hamburger" id="nav-icon">
           <span class="line"></span>
           <span class="line"></span>
@@ -144,14 +147,10 @@
                     <img src="../assets/images/logos/NLI.png" alt="The National Library of Israel">
                 </div>
             </div>
-            <!-- <div class="mobile-container"> -->
-            <div class="footer-upper-section">
-                <h2>Come visit <span class="nli">the National Library</span></h2>
-                <i></i>
-                <address>Kiryat Edmon Saftra, <br> Jerusalem, Israel, 9139002</address>
-                <a class="view-map" href="">view on map</a>
-            </div>
-            <div class="footer-upper-section">
+
+            <!-- MOBILE LAYOUT -->
+
+            <div class="footer-upper-section mobile-item">
                 <section class="contact-us">
                     <div class="contact-us-wrapper">
                         <h2>Contact Us</h2>
@@ -167,7 +166,42 @@
                     </div>
                 </section>
             </div>
-            <!-- </div> -->
+            <div class="footer-upper-section mobile-item">
+                <h2>Come visit <span class="nli">the National Library</span></h2>
+                <i></i>
+                <address>Kiryat Edmon Saftra, <br> Jerusalem, Israel, 9139002</address>
+                <a class="view-map" href="">view on map</a>
+            </div>
+
+            <!-- MOBILE LAYOUT END  *******************************************************-->
+
+            <!-- DESKTOP LAYOUT -->
+            <div class="footer-upper-section desktop-item">
+                <h2>Come visit <span class="nli">the National Library</span></h2>
+                <i></i>
+                <address>Kiryat Edmon Saftra, <br> Jerusalem, Israel, 9139002</address>
+                <a class="view-map" href="">view on map</a>
+            </div>
+
+
+            <div class="footer-upper-section desktop-item">
+                <section class="contact-us">
+                    <div class="contact-us-wrapper">
+                        <h2>Contact Us</h2>
+                        <div class="form-wrapper">
+                            <div class="form-input-wrapper">
+                                <form>
+                                    <input type="email" name="email" placeholder="email">
+                                    <input type="text" name="text" placeholder="what's on your mind?">
+                                    <input type="submit" class="btn footer-contact-btn" value="send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- DESKTOP LAYOUT END  *******************************************************-->
         </div>
         <div class="footer-wrapper footer-lower">
             <div class="social-media-cont">
@@ -184,15 +218,15 @@
     </footer>
 
 
-    <!-- <div id="mobile-menu">
-        <header class="mobile-menu-header">
+    <div id="mobile-menu" class="js-hide">
+        <!-- <header class="mobile-menu-header">
             <img src="../assets/images/logo.png" alt="National Library of Israel" id="mobile-logo">
             <div class="hamburger is-active" id="nav-icon">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </div>
-        </header>
+        </header> -->
         <main class="mobile-menu-main">
             <nav class="mobile-navigation-links">
                 <ul class="mobile-navigation-list-wrapper">
@@ -220,7 +254,7 @@
                 </div>
             </div>
         </footer>
-    </div> -->
+    </div>
 
     <!-- <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

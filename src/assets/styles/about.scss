@@ -4,11 +4,35 @@
 
 #about {
 
+    h1 {
+        line-height: 54px;
+
+        @include mobile {
+            @include default-title;
+            line-height: 30px;
+            // margin-top: 0;
+            margin-top: 4.375rem;
+        }
+    }
+
     h2, h3 {
         font-size: 1.875rem;
         font-weight: 800;
         line-height: 30px;
         margin-bottom: 1rem;
+    }
+
+    h3 {
+        @include mobile {
+            color: black;
+        }
+    }
+
+    .figcaption-text {
+        text-decoration: underline;
+    }
+    .color-about {
+        color: #264060 !important;
     }
 
     p {
@@ -18,11 +42,28 @@
     .block-img {
         height: 109px;
         width: 108px;
+        
+        @include mobile {
+            height: 280px;
+            width: 100%;
+            padding: 0;
+
+        }
+    }
+
+    .shared-header {
+        @include mobile {
+            
+        }
     }
 
     .shared-block-details {
         border: none;
         margin-left: 2.1875rem;
+
+        @include mobile {
+            margin: 0;
+        }
     }
 
 
@@ -30,17 +71,43 @@
         margin-bottom: 1.5rem;
         margin-top: 3.125rem;
         line-height: 25px;
+
+        @include mobile {
+            padding-left: 1rem; 
+        }
     }
 
     .header-img {
         width: 100%;
         height: 385px;
+        
+        @include mobile {
+            height: 290px;
+        }
+    }
+
+    .main-shared {
+        @include mobile {
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid rgba(115, 115, 115,0.3);
+        }
+    }
+    
+    .header-wrapper {
+        @include mobile {
+            padding: 0 1rem; 
+        }
     }
 
     figcaption {
         font-size: 0.8125rem;
         line-height: 18px;
         margin-top: 1.25rem;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
     .shared-btn {
@@ -61,4 +128,45 @@
     figure {
         margin-top: 1.875rem;
     }
+
+    .row-wrapper {
+        @include mobile {
+            border-left: 3px solid;
+            padding: 0 1rem;
+            margin-bottom: 3.125rem;
+
+        }
+
+        &:last-child {
+
+            @include mobile {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .shared-details-wrapper {
+
+        @include mobile {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    .icon-right-open {
+        
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .btn-wrapper {
+        @include mobile {
+            width: 93%;
+            margin: 0 auto;
+        }
+    }
+
+     
 }

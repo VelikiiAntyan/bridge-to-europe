@@ -1,12 +1,9 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './assets/styles/styles.scss';
 import './assets/styles/home.scss';
 
 import MenuToggle from './assets/js/common/mobile-menu';
 
 require('html-loader!./templates/index.html');
-
 
 const desktopText = `
     GLE is an initiative of the Rothschild Foundation Hanadiv
@@ -37,17 +34,20 @@ $(document).ready(function (){
     }
 });
 
+let resizeTiming;
 $(window).on('resize', function() {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        trimText();
-    } else {
-        $(".header-text").text(desktopText);
-    }
+    clearTimeout(resizeTiming);
+    resizeTiming = setTimeout(() => {
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            trimText();
+        } else {
+            $(".header-text").text(desktopText);
+        }
+    }, 100);
 });
 
 $('body').on('click','#read-more-link', function(e) {
     e.preventDefault();
-    
     $(".header-text").text(desktopText)
         .append($(`
             <span id="read-less-container">
@@ -60,7 +60,3 @@ $('body').on('click','#read-less-link', function(e) {
     e.preventDefault();
     trimText();
 });
-
-
-
-  

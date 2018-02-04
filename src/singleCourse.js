@@ -5,9 +5,22 @@ import MenuToggle from './assets/js/common/mobile-menu';
 
 require('html-loader!./templates/singleCourse.html');
 
-$('.section-info-title-wrapper').on('click', function () {
-    let $arrow = $(this).find('.icon-toggle')[0];
-    $($arrow).toggleClass('js-open');
+$('.icon-right-open').on('click', function () {
+    $(this).toggleClass('js-close');
+    $($(this).parent() .parent().parent()
+        .find($('.section-info-text'))[0]).slideToggle();
+});
 
-    console.log($(this).parent().children('p'));
+
+let resizeTiming;
+$(window).on('resize', function() {
+    clearTimeout(resizeTiming);
+    resizeTiming = setTimeout(() => {
+        if (window.matchMedia("(min-width: 767px)").matches) {
+            $('.section-info-text').css('display','block');
+        } else {
+            $('.section-info-text').css('display','none');
+            $('.icon-right-open').removeClass('js-close');
+        }
+    }, 100);
 });

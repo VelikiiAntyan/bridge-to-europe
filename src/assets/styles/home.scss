@@ -24,9 +24,9 @@
   }
 
 
-  [class^="icon-"]:hover{
-    cursor: initial;
-  }
+  // [class^="icon-"]:hover{
+  //   cursor: initial;
+  // }
 
   h1 {
     font-size: 3.625rem;
@@ -69,6 +69,8 @@
 
   h3 {
     font-style: italic;
+    z-index: 1;
+    position: relative;
     // padding: 1.25rem 0;
     // padding-bottom: 0;
     font-family: 'CrimsonText-SemiBoldItalic';
@@ -234,5 +236,56 @@
       line-height: 36px;
     }
   }
+
+  .title-link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .row-wrapper:hover > .shared-block-wrapper > a:after  {
+    opacity: 0.3;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  }
+
+  .row-wrapper:nth-child(1):hover .shared-heading {
+      color: $color-featured;
+  }
+
+  .row-wrapper:nth-child(3):hover .shared-heading {
+      color: $color-courses-education;
+  }
+
+  .row-wrapper:nth-child(5):hover .shared-heading {
+      color: $color-events;
+  }
+
+  .overlay {
+    position: relative;
+  }
+  
+  .overlay:after {
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+  }
+  
+  .overlay-featured:after {
+    background: linear-gradient(180deg, #C67E00 0%, #905B00 100%);
+  }
+
+  .overlay-course:after {
+    background: linear-gradient(180deg, #0EEDCE 0%, #06C8D6 100%);
+  }
+
+  .overlay-event:after {
+    background: linear-gradient(180deg, #FF9B00 0%, #FE6200 100%);
+  }
+  
+
 }
 

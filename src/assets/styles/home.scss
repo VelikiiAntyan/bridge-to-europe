@@ -225,26 +225,49 @@
     }
   }
   
-  .event-time {
-    font-size: 1.3125rem;
-    display: block;
-    font-family: 'OpenSansHebrew-ExtraBold';
-  
-    @include mobile {
-      font-size: 1.875rem;
-      font-weight: 800;
-      line-height: 36px;
-    }
-  }
-
   .title-link {
     &:hover {
       text-decoration: none;
     }
   }
 
+  .event-block-wrapper {
+
+    .event-time {
+        font-size: 1.3125rem;
+        display: block;
+        font-family: 'OpenSansHebrew-ExtraBold';
+        margin-top: auto;
+      
+        @include mobile {
+          font-size: 1.875rem;
+          font-weight: 800;
+          line-height: 36px;
+          margin-top: 1.875rem;
+          margin-bottom: 1.875rem;
+        }
+      }
+
+      .shared-details-wrapper {
+          p {
+              line-height: 1.2em;
+              max-height: 3.6em;
+              overflow: hidden;
+              position: relative;
+            }
+            
+            p:after {
+                content: "...";
+                position: absolute;
+                right: 0;
+                background-color: white;
+                bottom: 0;
+          }
+      }
+  }
+
   .row-wrapper:hover > .shared-block-wrapper > a:after  {
-    opacity: 0.3;
+    opacity: 0.5;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
   }
 

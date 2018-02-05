@@ -4,6 +4,8 @@
 
 #single-event {
 
+    @include footer-headers;
+
     h1 {
         color: $color-events;
         @include main-title;
@@ -12,13 +14,16 @@
             font-size: 1.875rem;
         }
     }
-    
-    h2 {
-        margin-bottom: 2rem;
-        @include default-title;
+
+    main {
         
-        @include mobile {
-            margin-bottom: 1.875rem;
+        h2 {
+            margin-bottom: 2rem;
+            @include default-title;
+            
+            @include mobile {
+                margin-bottom: 1.875rem;
+            }
         }
     }
 
@@ -28,9 +33,16 @@
 
     .main-shared {
 
+       @include tablet {
+            padding-right: 1rem;
+            padding-left: 1rem;
+       }
+
         @include mobile {
             padding: 0;
         }
+
+
     }
 
     .event-description-row {
@@ -43,33 +55,18 @@
     }
 
     .singleEvent-main-wrapper{
-    
         display: flex;
         align-items: flex-start;
-        padding: 1.25rem 0;
+        // padding: 1.25rem 0;
     
-        @include mobile{
+        @include mobile {
             display: flex;
             flex-direction: column;
             padding: 0;
         }
     
-        // .calender-icons-container{
-    
-        //     text-align: center;
-        //     margin-top: 1rem;
-            
-        //     @include tablet{
-        //         display: none;
-        //     }
-            
-        //     @include desktop{
-        //         display: none;
-        //     }
-        // }
-    
         .event-register{
-            width:43%;
+            width:60%;
             margin-left: 6.875rem;
             padding: 1.25rem;
             padding-top: 1.875rem;
@@ -87,6 +84,11 @@
 
             .event-btn {
                 width: 100%;
+
+                &:active {
+                    background-image: linear-gradient(180deg,#dd5019,#ff6300);
+                    // background-image: inherit;
+                }
             }
 
             .explanatory-text {
@@ -118,42 +120,10 @@
     
         }
         
-        // .event-register-wrapper{
-    
-        //     // > strong, > p, > address, {
-        //     //     margin: 1.25rem 0;
-        //     // }
-    
-        //     // @include mobile{
-        //     //     padding: 1rem 0;
-        //     //     border-top: 1px solid $main-background-color; 
-        //     //     border-bottom: 1px solid $main-background-color;
-        //     // }
-    
-        //     .calender-icons-container{
-        //         @include mobile{
-        //             display: none;
-        //         }
-    
-        //         @include tablet{
-        //             display: block;
-        //         }
-    
-        //         @include desktop{
-        //             display: block;
-        //         }
-        //     }
-    
-        // }
-        
         .event-description{
             width: 100% !important;
             border: none !important;
             width:57%;
-    
-            // h2{
-            //     margin: 0;
-            // }
 
             h3 {
                 font-size: 1rem;
@@ -163,29 +133,22 @@
             @include mobile{
                 width: 100% !important;
                 border: none !important;
-                // padding-top: 0 !important;
                 padding: 1.875rem 1.25rem 0 1.25rem;
-                
-                // .calender-icons-container{
-                //     display: block;
-                // }
             }
         }
     }
     
-    // .event-register, .event-description{
-    //     border: 1px solid black;
-    //     // padding: 1.25rem;
-    // }
+    .event-container {
+        width: 935px;
+        margin: 0 auto;
         
-    // .add-to-calender-wrapper{
-        
-    //     @include mobile{
-    //         padding: 1rem 0;
-    //         border-bottom: 1px solid $main-background-color;
-    //         border-top: 1px solid $main-background-color;
-    //         text-align: left;
-    //     }
-    // }
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
 }
 

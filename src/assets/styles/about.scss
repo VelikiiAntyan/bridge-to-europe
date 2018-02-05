@@ -47,7 +47,7 @@
             height: 280px;
             width: 100%;
             padding: 0;
-
+            margin-top: 1rem;
         }
     }
 
@@ -103,7 +103,7 @@
     figcaption {
         font-size: 0.8125rem;
         line-height: 18px;
-        margin-top: 1.25rem;
+        margin-top: 10px;
 
         @include mobile {
             text-align: center;
@@ -117,6 +117,10 @@
 
         @include tablet {
             display: none;
+        }
+
+        @include mobile {
+            margin-top: 1.875rem;
         }
     }
 
@@ -168,5 +172,16 @@
         }
     }
 
+    .shared-block-wrapper {
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .event-btn {
+        background: transparent;
+        color: $color-events !important;
+    }
      
 }

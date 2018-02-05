@@ -67,6 +67,7 @@
     }
 
     input{
+        color: inherit;
         width: 100%;
         background-color: $color-footer;
         // outline: none;
@@ -84,6 +85,8 @@
 
     
     .footer-contact-btn {
+        font-family: 'OpenSansHebrew-ExtraBold';
+        color: inherit;
         font-size: 0.9375rem;
         background: linear-gradient(180deg, #C67E00 0%, #905B00 100%);
         border-radius: 10px;
@@ -99,6 +102,7 @@
     }
 
     .view-map {
+        font-family: 'OpenSansHebrew-ExtraBold';
         font-weight: bold;
         line-height: 26px;
         color: inherit;

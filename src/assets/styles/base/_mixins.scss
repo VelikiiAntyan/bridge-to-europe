@@ -87,6 +87,14 @@ $large-screen-width: 1365px;
     }
 }
 
+@mixin footer-headers {
+    footer {
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 
 @mixin inputPlaceholder() {
   $selector: '';
@@ -117,6 +125,6 @@ $large-screen-width: 1365px;
 }
 
 @include inputPlaceholder() {
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
 }
 

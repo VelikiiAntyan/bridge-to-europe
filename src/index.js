@@ -21,7 +21,7 @@ function trimText() {
             $(this).text($(this).text().substr(0,145) + '...')
                 .append($(`
                     <span id="read-more-container">
-                        <a href="" id="read-more-link">read more</a>
+                        <a href="./about.html" id="read-more-link">read more</a>
                     </span>
                 `));
         }
@@ -46,17 +46,17 @@ $(window).on('resize', function() {
     }, 100);
 });
 
-$('body').on('click','#read-more-link', function(e) {
-    e.preventDefault();
-    $(".header-text").text(desktopText)
-        .append($(`
-            <span id="read-less-container">
-                <a href="" id="read-less-link">read less</a>
-            </span>
-        `));
-});
+// $('body').on('click','#read-more-link', function(e) {
+//     e.preventDefault();
+//     $(".header-text").text(desktopText)
+//         .append($(`
+//             <span id="read-less-container">
+//                 <a href="" id="read-less-link">read less</a>
+//             </span>
+//         `));
+// });
 
-$('body').on('click','#read-less-link', function(e) {
-    e.preventDefault();
-    trimText();
-});
+// $('body').on('click','#read-less-link', function(e) {
+//     e.preventDefault();
+//     trimText();
+// });

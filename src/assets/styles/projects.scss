@@ -4,33 +4,24 @@
 
 #projects {
 
+    @include footer-headers;
+
     h1 {
         @include main-title;
         color: $color-projects;
     }
 
     h2 {
-       @include default-title;
+        @include default-title;
 
-       @include mobile {
-           padding-bottom: 1.5rem;
-       }
+        @include mobile {
+            padding-bottom: 1.5rem;
+        }
     }
 
-    // .header-wrapper {
-    // .projects-header, .app-header {
-    //     @include mobile {
-    //         height: 16.5625rem;
-    //     }
-    // }
-
-    // }
-
     .rectangle {
-        // height: 10px;
         width: 47px;
         border: 5px solid $color-featured;
-        
     }
 
     .projects-header {
@@ -40,10 +31,6 @@
 
     .projects-main{
         background-color: $main-background-color;
-
-        // p {
-        //     line-height: 25px;
-        // }
     }
 
     .shared-block-wrapper {
@@ -90,15 +77,5 @@
         @include mobile {
             margin-top: 0;
         }
-    }    
-    // .projects-main-wrapper{
-    // 	// line-height: 25px;
-    //     // p {
-    //     //     margin: 2rem 0;    
-    //     //     @include mobile{
-    //     //         margin: 1rem 0;    
-    //     //     }
-    //     // }
-    // }
-    
+    }
 }

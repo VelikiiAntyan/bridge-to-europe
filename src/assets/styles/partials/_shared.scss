@@ -197,6 +197,31 @@ main {
     @include action-button;
 }
 
+.btn {
+
+    &:hover {
+        color: currentColor;
+        color: inherit;
+    }
+
+    &:active {
+        color: currentColor;
+        color: inherit;
+    }
+}
+
+a {
+    &:hover {
+        color: currentColor;
+        color: inherit;
+    }
+
+    &:active {
+        color: currentColor;
+        color: inherit;
+    }
+}
+
 .btn-wrapper {
     margin-top: auto;
     padding-bottom: 1.875rem;

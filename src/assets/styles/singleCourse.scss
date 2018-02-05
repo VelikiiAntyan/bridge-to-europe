@@ -4,6 +4,8 @@
 
 #single-course {
 
+    @include footer-headers;
+
     h1 {
         @include main-title;
         color: $color-courses-education;
@@ -125,7 +127,6 @@
         }
         
         @include mobile {
-            // display: block;
             display: flex;
             justify-content: space-between;
 
@@ -134,7 +135,7 @@
         &:after {
             content: '';
             background-color: $color-ephemera;
-            height: 2px;
+            height: 1px;
             flex: 1;
             opacity: 0.3;
 
@@ -185,13 +186,7 @@
 
     }
 
-    
-    
     .section-info-title-wrapper {
-        // @extend .featured-title;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
         margin-bottom: 1.5rem;
         
         @include mobile {
@@ -207,8 +202,6 @@
             display: none;
         }
     }
-
-    
     
     .icon-toggle {
         transition: all 1s; 

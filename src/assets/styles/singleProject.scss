@@ -78,5 +78,28 @@
             padding: 0 1.25rem;
         }
     }
+
+    // CAROUSEL STLYES ****************************
+
+    .carousel-caption {
+        right: auto !important;
+        left: auto !important;
+        padding: 1.25rem 1.5rem;
+        bottom: 0 !important;
+    }
+
+    .icon-left {
+        transform: rotate(180deg) !important;
+    }
+
+    .icon-right-open::before {
+        color: #905B00;
+        font-size: 28px;
+        margin: 0;
+        padding: 8.5px 28px 8.5px 17px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
     
 }

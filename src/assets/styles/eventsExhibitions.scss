@@ -74,9 +74,6 @@
         }
     }
 
-    strong.uppercase {
-    }
-
     .view-all {
         @include mobile {
             width: 100%;
@@ -165,10 +162,11 @@
 
         h2 {
             @include default-title;
-            font-family: 'OpenSansHebrew';
+            // font-family: 'OpenSansHebrew';
         }
 
         .btn {
+            font-family: 'OpenSansHebrew-ExtraBold';
             background-color: $color-projects;
             border-radius: 10px;
             font-size: 0.9375rem;
@@ -176,6 +174,7 @@
             line-height: 20px;
             height: 2.75rem;
             width: 63%;
+            color: white;
 
             @include mobile {
                 color: $color-projects;

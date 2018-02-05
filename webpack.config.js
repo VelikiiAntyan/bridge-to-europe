@@ -102,6 +102,11 @@ const config = {
         new webpack.NamedModulesPlugin(),
         extractCSS,
         extractCommons,
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        })
         
         // new BundleAnalyzerPlugin()
     ]

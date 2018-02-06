@@ -66,6 +66,7 @@
         }
     
         .event-register{
+            border-radius: 15px;
             width:60%;
             margin-left: 6.875rem;
             padding: 1.25rem;
@@ -73,13 +74,22 @@
             background-color: $color-past-events-bkg;
 
             h3 {
+                font-family: 'OpenSansHebrew';
                 font-size: 1.5rem;
                 color: $color-events;
                 line-height: 38px;
             }
 
             i {
-                font-size: 32px;
+                font-size: 26px;
+
+                &::before {
+                    margin-left: 0;
+                }
+
+                &:hover {
+                    cursor: initial;
+                }
             }
 
             .event-btn {

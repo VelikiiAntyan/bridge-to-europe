@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover; 
 
-    .row{
+    .row {
         margin: 0;
     }
 
@@ -99,7 +99,7 @@
     display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     margin: 1rem;
     z-index: 20;
 
@@ -109,24 +109,50 @@
 
 }
 
-.navigation-list:nth-child(1):hover > .navigation-links{
+.navigation-list:hover > .navigation-links{ 
+    @include transition-timing;
+}
+
+// .navigation-list:nth-child(1):hover > .navigation-links{
+//     color: white !important;
+//     opacity: 0.85;
+// }
+
+// .navigation-list:nth-child(2):hover > .navigation-links{
+//     color: $color-projects !important;
+// }
+
+// .navigation-list:nth-child(3):hover > .navigation-links{
+//     color: $color-courses-education !important;
+// }
+
+// .navigation-list:nth-child(4):hover > .navigation-links{
+//     color: $color-events !important;
+// }
+
+// .navigation-list:nth-child(5):hover > .navigation-links{
+//     color: white !important;
+// }
+
+
+.navigation-list-about:hover > .navigation-links{
     color: white !important;
     opacity: 0.85;
 }
 
-.navigation-list:nth-child(2):hover > .navigation-links{
+.navigation-list-projects:hover > .navigation-links{
     color: $color-projects !important;
 }
 
-.navigation-list:nth-child(3):hover > .navigation-links{
+.navigation-list-education:hover > .navigation-links{
     color: $color-courses-education !important;
 }
 
-.navigation-list:nth-child(4):hover > .navigation-links{
+.navigation-list-events:hover > .navigation-links{
     color: $color-events !important;
 }
 
-.navigation-list:nth-child(5):hover > .navigation-links{
+.navigation-list-contact:hover > .navigation-links{
     color: white !important;
 }
 
@@ -158,6 +184,14 @@
 .header-wrapper{
     @include mobile {
         width: 100%;
+    }
+}
+
+.tablet-icon {
+    display: none;
+
+    @include large-screen {
+        display: block;
     }
 }
 

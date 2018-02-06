@@ -11,8 +11,8 @@
     position: absolute;
     top: -12px;
     bottom: auto;
-    left: 0;
-    margin: 1.25rem 0.5rem 1rem 1rem;
+    right: 0;
+    margin: 1.25rem 1rem 1rem 0.5rem;
     height: 40px;
     z-index: 20 !important;
 
@@ -60,7 +60,7 @@
   z-index: 20 !important;
 }
 
-.hamburger .line{
+.hamburger .line {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

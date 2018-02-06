@@ -148,8 +148,11 @@
 
     .exhibition-kit-wrapper {
         height: 370px;
-        opacity: 0.85;
-        background: linear-gradient(270deg, rgba(0,0,0,0) 0%, #000000 100%), linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%), linear-gradient(0deg, #0400FF 0%, #0066FF 100%);
+        // opacity: 0.85;
+        background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.8) 100%),
+            linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0, 0, 0, 0.5) 100%),
+            linear-gradient(0deg, rgba(4, 0, 255, 0.5) 0%, rgba(0, 102, 255, 0.9) 100%),
+            url('~/dist/assets/images/events.jpg') no-repeat center center;
         color: white;
         padding: 3.75rem;
 

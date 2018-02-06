@@ -3,6 +3,8 @@ import './assets/styles/home.scss';
 
 import MenuToggle from './assets/js/common/mobile-menu';
 
+// import 'bootstrap/dist/js/bootstrap.min.js';
+
 require('html-loader!./templates/index.html');
 
 const desktopText = `
@@ -45,6 +47,8 @@ $(window).on('resize', function() {
         }
     }, 100);
 });
+
+
 
 // $('body').on('click','#read-more-link', function(e) {
 //     e.preventDefault();

@@ -1,0 +1,118 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a58032f4aafd0eec54803075f5b320d4",
+      "css": "email",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "whatsapp",
+      "code": 62002,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "t6cy82vd3t5piy0j3uknrlrzpg1ld8y3",
+      "css": "search",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "37910a1398001a5ccb541cb2a253a2c7",
+      "css": "right-open",
+      "code": 61446,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "37f6cfbb4062ed0d01b351ec35c334ff",
+      "css": "right-open-mini",
+      "code": 59397,
+      "src": "entypo"
+    },
+    {
+      "uid": "13289e807e02b1d46f2fe10d81d6fba6",
+      "css": "location-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "05a2f4c4839012434774cc1ceb4c0f9b",
+      "css": "download-alt",
+      "code": 59398,
+      "src": "elusive"
+    },
+    {
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "code": 61664,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "20c394766b00baac93a7abcb3a34c0c6",
+      "css": "email",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M0 788L0 212Q0 211 3 193L342 483 4 808Q0 794 0 788ZM45 153Q52 150 62 150L975 150Q984 150 993 153L653 444 608 480 519 553 430 480 385 444ZM46 847L387 520 519 627 651 520 992 847Q984 850 975 850L62 850Q54 850 46 847ZM696 483L1034 193Q1037 202 1037 212L1037 788Q1037 797 1034 808Z",
+        "width": 1037
+      },
+      "search": [
+        "email"
+      ]
+    },
+    {
+      "uid": "6b09b8af775b7b33afababc26f46346f",
+      "css": "twitter",
+      "code": 61593,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M904 228Q867 282 814 321 814 329 814 344 814 417 793 489T729 628 626 745 482 827 301 857Q150 857 25 776 44 778 68 778 194 778 292 701 233 700 187 665T123 576Q142 579 157 579 181 579 205 573 142 560 101 511T60 396V394Q98 415 142 417 105 392 83 353T61 267Q61 218 86 176 154 259 250 309T458 364Q453 343 453 323 453 248 506 196T633 143Q712 143 765 200 826 188 880 156 859 220 800 256 852 250 904 228Z",
+        "width": 928.6
+      },
+      "search": [
+        "twitter"
+      ]
+    },
+    {
+      "uid": "9f86cd100a5445d5ab4a1b38cbe3b6f6",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M696 71Q763 71 810 119T857 232V768Q857 834 810 881T696 929H592V596H703L719 467H592V384Q592 353 605 338T656 322L724 321V206Q689 201 624 201 549 201 503 245T458 372V467H346V596H458V929H161Q94 929 47 881T0 768V232Q0 166 47 119T161 71H696Z",
+        "width": 857.1
+      },
+      "search": [
+        "facebook-squared"
+      ]
+    }
+  ]
+}

@@ -95,6 +95,11 @@ $large-screen-width: 1365px;
     }
 }
 
+@mixin transition-timing {
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
 
 @mixin inputPlaceholder() {
   $selector: '';

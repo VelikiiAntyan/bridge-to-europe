@@ -70,7 +70,6 @@
         color: inherit;
         width: 100%;
         background-color: $color-footer;
-        // outline: none;
         border: none;
     }
     
@@ -148,17 +147,30 @@
             margin-top: 4.375rem;
         }
     }
-    
-    // .mobile-container {
-        
-    //     @include tablet {
-    //         display: none;
-    //     }
 
-    //     @include desktop {
-    //         display: none;
-    //     }
-    // }
+    .address-wrapper {
+        display: flex;
+
+        .icon-location-outline {
+            font-size: 28px;
+            margin-right: 10px;
+            margin-top: -3px;
+            
+            &::before {
+                margin: 0;
+            }
+            
+            &:hover {
+                cursor: initial;
+            }
+            
+            @include mobile {
+                margin-top: -5px;
+            } 
+        }
+    }
+
+    
 
 }
 

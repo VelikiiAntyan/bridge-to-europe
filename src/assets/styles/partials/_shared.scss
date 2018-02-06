@@ -20,7 +20,9 @@ main {
     margin: 0;
 }
 
-.block-img{
+.block-img {
+
+    @include transition-timing;
     display:block;
     // width: 41%;
     width: 370px;
@@ -344,6 +346,52 @@ a {
     display: none;
 }
 
+// AFFIX MENU ********************
+
+.affix {
+    position: fixed !important;
+    top: 0;
+    background-color: black;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    // animation-name: fadeIn;
+    // animation-duration: 0.5s;
+    // animation-fill-mode: both;
+
+    .main-header {
+        display: none;
+    }
+    
+    .shared-header-content {
+        display: none;
+    }
+
+    .desktop-navigation-links {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .shared-header {
+        height: auto !important;
+        padding-bottom: 0 !important;
+
+        .desktop-navigation-links {
+            margin-bottom: 0rem !important;
+        }
+    }
+
+}
+
+.affix.app-header {
+    height: auto !important;
+    padding-bottom: 0 !important;
+}
+
+.affix-main-padding {
+    padding-top: 510px;
+    // padding-top: 587px;
+}
+
 .mobile-item {
     display: none;
     @include mobile {
@@ -362,3 +410,6 @@ a {
         display: none;
     }
 }
+
+// ANIMATIONS *************
+

@@ -2,6 +2,7 @@ import './assets/styles/styles.scss';
 import './assets/styles/home.scss';
 
 import MenuToggle from './assets/js/common/mobile-menu';
+import StickyMenu from './assets/js/common/sticky-menu';
 
 // import 'bootstrap/dist/js/bootstrap.min.js';
 
@@ -34,6 +35,7 @@ $(document).ready(function (){
     if (window.matchMedia("(max-width: 768px)").matches) {
         trimText();
     }
+
 });
 
 let resizeTiming;
@@ -48,19 +50,3 @@ $(window).on('resize', function() {
     }, 100);
 });
 
-
-
-// $('body').on('click','#read-more-link', function(e) {
-//     e.preventDefault();
-//     $(".header-text").text(desktopText)
-//         .append($(`
-//             <span id="read-less-container">
-//                 <a href="" id="read-less-link">read less</a>
-//             </span>
-//         `));
-// });
-
-// $('body').on('click','#read-less-link', function(e) {
-//     e.preventDefault();
-//     trimText();
-// });

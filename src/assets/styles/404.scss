@@ -4,7 +4,7 @@
 
 #error {
 
-    height: 100vh;
+    height: 100vh !important;
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/404.jpg') no-repeat center center;
     background-size: cover;
 
@@ -56,9 +56,11 @@
     
     .column-wrapper {
         display: flex;
-
+        margin-top: 10rem;
+        
         @include mobile {
             flex-direction: column;
+            margin-top: 6.25rem;
         }
     }
 

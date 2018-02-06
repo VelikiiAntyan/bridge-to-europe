@@ -12,6 +12,16 @@
 
 #index-page {
 
+  // .desktop-navigation-links {
+  //   position: fixed !important;
+  //   top: 0;
+  //   right: 0;
+  //   left: 0;
+  //   transition: top 0.2s ease-in-out;
+  // }
+  
+  
+
   // .animated {
   //   animation-duration: 1s;
   //   animation-fill-mode: both;
@@ -203,7 +213,8 @@
   }
 
   .desktop-navigation-links {
-    margin-bottom: 2.5rem;
+    // margin-bottom: 2.5rem;
+    padding: 1.5rem !important;
   }
 
   .main-btn {
@@ -227,7 +238,7 @@
   .app-header {
     background-image: url('~/dist/assets/images/main-header.jpg');
     align-items: center;
-    padding: 1.25rem 0 5rem 0;
+    padding: 5.625rem 0 5rem 0;
     margin: 0;
     position: relative;
 

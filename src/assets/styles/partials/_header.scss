@@ -37,10 +37,15 @@
 }
 
 .shared-header{
+    padding-top: 9.375rem;
     height: 30.3125rem;
     display: flex;
     // padding-bottom: 10.9375rem;
     color: $color-header;
+
+    @include mobile {
+        padding-top: 0;
+    }
 
     @include mobile {
         padding: 2.1875rem; 
@@ -63,7 +68,7 @@
 
     .desktop-navigation-links {
         padding: 1.25rem 0 !important;
-        margin-bottom: 4rem;
+        // margin-bottom: 4rem;
 
         @include mobile {
             display: none;
@@ -86,6 +91,7 @@
 
 #logo-img {
     position: absolute;
+    // position: fixed;
     // width: 80px;
     left: 36px;
     top: 20px;

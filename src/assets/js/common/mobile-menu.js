@@ -23,36 +23,6 @@ const MenuToggle = (() => {
 
         });
 
-        $(window).on('scroll', function(e) {
-            var scrollValue = window.scrollY;
-            if (scrollValue > 70) {
-                $('.app-header').addClass('affix');
-                // $('main').addClass('affix-main-padding');
-                // $('.desktop-navigation-links').addClass('affix');
-                // $('.affix-logo').addClass('affix');
-            } else {
-                $('.app-header').removeClass('affix');
-                // $('main').removeClass('affix-main-padding');
-                // $('.desktop-navigation-links').removeClass('affix');
-                // $('.affix-logo').removeClass('affix');
-            }
-        });
-
-    });
-
-    var lastScrollTop = 0;
-    $(window).scroll(function(event){
-       var st = $(this).scrollTop();
-       if (st > lastScrollTop){
-           // downscroll code
-           console.log('downscroll code');
-           $('header').css('display','none');
-        } else {
-            // upscroll code
-            console.log('upscroll code');
-            $('header').css('display','block');
-       }
-       lastScrollTop = st;
     });
     
 })();

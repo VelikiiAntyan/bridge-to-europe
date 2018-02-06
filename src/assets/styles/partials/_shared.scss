@@ -346,51 +346,76 @@ a {
     display: none;
 }
 
-// AFFIX MENU ********************
+.nav-down {
+    background-color: black;
+}
 
-.affix {
+.sticky-menu-wrapper {
     position: fixed !important;
     top: 0;
-    background-color: black;
-    left: 0;
     right: 0;
-    z-index: 20;
-    // animation-name: fadeIn;
-    // animation-duration: 0.5s;
-    // animation-fill-mode: both;
+    left: 0;
+    transition: top 0.4s ease-in-out;
+    z-index: 1000;
 
-    .main-header {
-        display: none;
+    @include mobile {
+        height: 60px;
     }
+}
+
+.nav-up {
+    top: -30.3125rem;
+}
+
+// .header-wrapper {
+//     margin-top: 9.375rem;
+// }
+
+// AFFIX MENU ********************
+
+// .affix {
+//     position: fixed !important;
+//     top: 0;
+//     background-color: black;
+//     left: 0;
+//     right: 0;
+//     z-index: 20;
+//     // animation-name: fadeIn;
+//     // animation-duration: 0.5s;
+//     // animation-fill-mode: both;
+
+//     .main-header {
+//         display: none;
+//     }
     
-    .shared-header-content {
-        display: none;
-    }
+//     .shared-header-content {
+//         display: none;
+//     }
 
-    .desktop-navigation-links {
-        margin-bottom: 1.5rem !important;
-    }
+//     .desktop-navigation-links {
+//         margin-bottom: 1.5rem !important;
+//     }
 
-    .shared-header {
-        height: auto !important;
-        padding-bottom: 0 !important;
+//     .shared-header {
+//         height: auto !important;
+//         padding-bottom: 0 !important;
 
-        .desktop-navigation-links {
-            margin-bottom: 0rem !important;
-        }
-    }
+//         .desktop-navigation-links {
+//             margin-bottom: 0rem !important;
+//         }
+//     }
 
-}
+// }
 
-.affix.app-header {
-    height: auto !important;
-    padding-bottom: 0 !important;
-}
+// .affix.app-header {
+//     height: auto !important;
+//     padding-bottom: 0 !important;
+// }
 
-.affix-main-padding {
-    padding-top: 510px;
-    // padding-top: 587px;
-}
+// .affix-main-padding {
+//     padding-top: 510px;
+//     // padding-top: 587px;
+// }
 
 .mobile-item {
     display: none;

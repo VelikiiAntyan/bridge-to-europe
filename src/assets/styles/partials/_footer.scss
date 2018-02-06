@@ -107,9 +107,7 @@
         color: inherit;
     }
 
-    address {
-        margin-bottom: 3.5rem;
-    }
+    
 
     .social-media-cont {
         margin: 6.875rem 0 2rem 0;
@@ -150,6 +148,18 @@
 
     .address-wrapper {
         display: flex;
+
+        @include mobile {
+            justify-content: center
+        }
+        
+        address {
+            margin-bottom: 3.5rem;
+            
+            @include mobile {
+                text-align: left;
+            }
+        }
 
         .icon-location-outline {
             font-size: 28px;

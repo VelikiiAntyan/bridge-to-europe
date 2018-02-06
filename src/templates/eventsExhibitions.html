@@ -22,13 +22,18 @@
                 <a href="./">
                     <img id="mobile-logo" src="../assets/images/logos/nli-logo-mobile.png" alt="Bridge To Europe">
                 </a>
-                <nav class="desktop-navigation-links">
+                <nav class="desktop-navigation-links container">
                     <ul class="navigation-list-wrapper">
-                        <li class="navigation-list"><a href="about.html" class="navigation-links">about</a></li>
-                        <li class="navigation-list"><a href="projects.html" class="navigation-links">projects</a></li>
-                        <li class="navigation-list"><a href="coursesEducation.html" class="navigation-links">education and courses</a></li>
-                        <li class="navigation-list"><a href="eventsExhibitions.html" class="navigation-links color-event">events and exhibitions</a></li>
-                        <li class="navigation-list"><a href="#footer" class="navigation-links">contact us</a></li>
+                        <li class="navigation-list tablet-icon">
+                            <a href="./" class="navigation-links">
+                                <img id="tablet-logo" src="../assets/images/logos/nli-logo-mobile.png" alt="Bridge To Europe">
+                            </a>
+                        </li>
+                        <li class="navigation-list navigation-list-about"><a href="about.html" class="navigation-links">about</a></li>
+                        <li class="navigation-list navigation-list-projects"><a href="projects.html" class="navigation-links">projects</a></li>
+                        <li class="navigation-list navigation-list-education"><a href="coursesEducation.html" class="navigation-links">education and courses</a></li>
+                        <li class="navigation-list navigation-list-events"><a href="eventsExhibitions.html" class="navigation-links">events and exhibitions</a></li>
+                        <li class="navigation-list navigation-list-contact"><a href="#footer" class="navigation-links">contact us</a></li>
                     </ul>
                 </nav>
                 <!-- <div class="rectangle"></div> -->
@@ -179,10 +184,14 @@
             <div class="footer-upper container">
                 <div class="footer-upper-section">
                     <div class="footer-img" >
-                        <img src="../assets/images/logos/Rothschild.png" alt="Rothchild Foundation (Hanadav) Europe">
+                        <a href="https://rothschildfoundation.eu/" target="_blank">
+                            <img src="../assets/images/logos/Rothschild.png" alt="Rothchild Foundation (Hanadav) Europe">
+                        </a>
                     </div>
                     <div class="footer-img" >
-                        <img src="../assets/images/logos/NLI.png" alt="The National Library of Israel">
+                        <a href="http://web.nli.org.il/sites/NLI/english/Pages/default.aspx" target="_blank">
+                            <img src="../assets/images/logos/NLI.png" alt="The National Library of Israel">
+                        </a>
                     </div>
                 </div>
     
@@ -263,7 +272,6 @@
             </div>
         </footer>
     
-    
         <div id="mobile-menu" class="js-hide">
             <main class="mobile-menu-main">
                 <nav class="mobile-navigation-links">
@@ -291,13 +299,14 @@
                         <i class="footer-icons icon-email"></i>
                     </div>
                 </div>
+                <div class="copyright-wrapper">
+                    <p class="copyright-text">
+                        &copy; 2017 Bridge to Europe. All Rights Reserved.
+                    </p>
+                </div>
             </footer>
         </div>
-    <!-- <script
-    src="https://code.jquery.com/jquery-1.10.2.min.js"
-    integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg="
-    crossorigin="anonymous"></script>
-    <script src="./assets/js/vendor/jquery-1.10.2.min.js"></script> -->
+        
     <script src="assets/js/commons.js"></script>
     <script src="assets/js/eventsExhibitions.bundle.js"></script>
 </body>

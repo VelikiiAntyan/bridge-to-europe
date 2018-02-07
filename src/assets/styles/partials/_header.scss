@@ -94,7 +94,7 @@
     // position: fixed;
     // width: 80px;
     left: 36px;
-    top: 20px;
+    top: 22px;
 
     @include large-screen {
         display: none;
@@ -115,9 +115,7 @@
 
 }
 
-.navigation-list:hover > .navigation-links{ 
-    @include transition-timing;
-}
+
 
 // .navigation-list:nth-child(1):hover > .navigation-links{
 //     color: white !important;
@@ -140,7 +138,14 @@
 //     color: white !important;
 // }
 
+.navigation-list:hover > .navigation-links{ 
+    transition: all 0.1s;
+}
 
+.navigation-list:hover {
+    transition: all 0.1s;
+    transform: translateY(-5px);
+}
 .navigation-list-about:hover > .navigation-links{
     color: white !important;
     opacity: 0.85;

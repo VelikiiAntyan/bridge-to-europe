@@ -70,26 +70,24 @@
 
     .singleCourse-main-wrapper {
         ul {
-            list-style: none;
-            padding: 1rem;
+            padding: 1rem 2rem;
             margin: 0;
-
+            
             @include mobile {
-                padding: 0;
+                padding: 0 2rem;
             }
-        }
-        
-        li {
-            padding-left: 1em; 
-            text-indent: -.7em;
-            display: flex;
-            align-items: center;
-        }
-        
-        li::before {
-            content: "• ";
-            color: $color-featured;
-            font-size: 32px;
+
+            li {
+                color: $color-featured;
+
+                .list-info-text {
+                    color: black;
+                }
+            }
+
+            li:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
         }
 
     }

@@ -116,6 +116,14 @@
         .desktop-featured-content {
             @include featured-content-desktop;
             width: 70%;
+
+            .btn {
+                &:hover {
+                    background-color: $color-btn-hover-text;
+                    color: $color-featured;
+                }
+            }
+
         }
     }
 

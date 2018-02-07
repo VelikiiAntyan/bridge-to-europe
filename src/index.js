@@ -4,8 +4,6 @@ import './assets/styles/home.scss';
 import MenuToggle from './assets/js/common/mobile-menu';
 import StickyMenu from './assets/js/common/sticky-menu';
 
-// import 'bootstrap/dist/js/bootstrap.min.js';
-
 require('html-loader!./templates/index.html');
 
 const desktopText = `
@@ -35,6 +33,19 @@ $(document).ready(function (){
     if (window.matchMedia("(max-width: 768px)").matches) {
         trimText();
     }
+
+    $('.event-text').each(function (i) {
+        let len = $(this).text().trim().length;
+
+        if (len > 130) {
+            $(this).text($(this).text().substr(0,130) + '...' )
+                .append($(`
+                <span class="read-more-event">
+                    <a href="./singleEvent.html">read more</a>
+                </span>
+                `));
+        }
+    });
 
 });
 

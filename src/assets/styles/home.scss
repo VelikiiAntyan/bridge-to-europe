@@ -121,7 +121,6 @@
 
     &:hover {
       transform: translate(10px,0);
-      // left: 20px;
     }
 
     @include mobile {
@@ -214,7 +213,7 @@
 
   .desktop-navigation-links {
     // margin-bottom: 2.5rem;
-    padding: 1.5rem !important;
+    padding: 1.5rem 0 !important;
   }
 
   .main-btn {
@@ -309,22 +308,22 @@
         }
       }
 
-      .shared-details-wrapper {
-          p {
-              line-height: 1.2em;
-              max-height: 3.6em;
-              overflow: hidden;
-              position: relative;
-            }
+      // .shared-details-wrapper {
+      //     p {
+      //         line-height: 1.2em;
+      //         max-height: 3.6em;
+      //         overflow: hidden;
+      //         position: relative;
+      //       }
             
-            p:after {
-                content: "...";
-                position: absolute;
-                right: 0;
-                background-color: white;
-                bottom: 0;
-          }
-      }
+      //       p:after {
+      //           content: "...";
+      //           position: absolute;
+      //           right: 0;
+      //           background-color: white;
+      //           bottom: 0;
+      //     }
+      // }
   }
 
   .row-wrapper:hover .block-img  {
@@ -349,10 +348,16 @@
       color: $color-events;
   }
 
-  .affix-main-padding {
-    padding-top: 525px;
+  .read-more-event {
+    color: $color-events;
+    text-decoration: underline;
   }
 
+  // .affix-main-padding {
+  //   padding-top: 525px;
+  // }
+
+  
   // .overlay {
   //   position: relative;
   // }

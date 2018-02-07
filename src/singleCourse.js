@@ -8,10 +8,9 @@ require('html-loader!./templates/singleCourse.html');
 
 $('.icon-right-open').on('click', function () {
     $(this).toggleClass('js-close');
-    $($(this).parent() .parent().parent()
+    $($(this).parent().parent().parent()
         .find($('.section-info-text'))[0]).slideToggle();
 });
-
 
 let resizeTiming;
 $(window).on('resize', function() {

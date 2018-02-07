@@ -34,14 +34,23 @@
     .footer-icons{
         font-size: 1.5rem;
         margin: 1.5rem;
-
-        &:hover{
+        
+        &:hover {
             cursor: pointer;
         }
-
+        
         &::before{
+            display: inline-block;
             margin: 0;
+            
         }
+    }
+
+    .footer-icons:hover::before {
+        transition: all 0.2s;
+        -webkit-transform: rotate(-5deg) scale(1.2);
+        -moz-transform: rotate(-5deg) scale(1.2);
+        -o-transform: rotate(-5deg) scale(1.2);
     }
 
     .footer-upper {
@@ -91,6 +100,12 @@
         border-radius: 10px;
         height: 2.5rem;
         
+        &:hover {
+            background: transparent;
+            color: $color-featured;
+            border: 1px solid $color-featured;
+        }
+        
         @include mobile {
             border-radius: 15px;
         }
@@ -111,7 +126,7 @@
 
     .social-media-cont {
         margin: 6.875rem 0 2rem 0;
-        
+
         @include mobile {
             margin-top: 6.25rem;
         }

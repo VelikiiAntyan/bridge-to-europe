@@ -167,6 +167,9 @@
         }
 
         .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: 'OpenSansHebrew-ExtraBold';
             background-color: $color-projects;
             border-radius: 10px;
@@ -176,6 +179,12 @@
             height: 2.75rem;
             width: 63%;
             color: white;
+
+            &:hover {
+                background-color: transparent;
+                color: $color-projects;
+                border: 1px solid $color-projects;
+            }
 
             @include mobile {
                 color: $color-projects;
@@ -247,7 +256,11 @@
         }
     }
 
-    
+    .go-to-event-link {
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
 }
 
 

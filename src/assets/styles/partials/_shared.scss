@@ -346,26 +346,45 @@ a {
     display: none;
 }
 
+.js-transparent {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
 .nav-down {
-    background-color: black;
+    background-color: #1e1e1e;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0065a0+3,0065a0+3,140006+35&1+0,0.83+90 */
+background: -moz-linear-gradient(45deg, rgba(0,101,160,1) 0%, rgba(0,101,160,0.99) 3%, rgba(20,0,6,0.93) 35%, rgba(20,0,6,0.83) 90%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(0,101,160,1) 0%,rgba(0,101,160,0.99) 3%,rgba(20,0,6,0.93) 35%,rgba(20,0,6,0.83) 90%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(0,101,160,1) 0%,rgba(0,101,160,0.99) 3%,rgba(20,0,6,0.93) 35%,rgba(20,0,6,0.83) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0065a0', endColorstr='#d4140006',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */   // height: 97px;
+    // transform: rotate(-180deg);
+    // background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.nav-up {
+    top: -30.3125rem !important;
 }
 
 .sticky-menu-wrapper {
+    font-family: 'OpenSansHebrew-ExtraBold';
     position: fixed !important;
     top: 0;
     right: 0;
     left: 0;
-    transition: top 0.4s ease-in-out;
+    transition: top 0.3s ease-in-out;
     z-index: 1000;
 
     @include mobile {
         height: 60px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        padding: 0 5px;
+    }
 }
 
-.nav-up {
-    top: -30.3125rem;
-}
+
 
 // .header-wrapper {
 //     margin-top: 9.375rem;
@@ -436,5 +455,20 @@ a {
     }
 }
 
-// ANIMATIONS *************
-
+.featured-action {
+    .btn {
+      &:hover {
+        color: $color-btn-hover-text !important;
+        background: linear-gradient(180deg, #C67E00 0%, #905B00 100%);
+      }
+    }
+  }
+  
+  .education-action {
+    .btn {
+      &:hover {
+        color: $color-btn-hover-text !important;
+        background: linear-gradient(180deg, #00ABAD 0%, #017D99 100%);
+      }
+    }
+  }

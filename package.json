@@ -1,7 +1,8 @@
 {
-  "name": "generator-frontend-webpack",
+  "name": "bridge-to-europe",
+  "author": "Mutasem Halawani",
   "version": "1.0.0",
-  "description": "generator for frontend apps built on webpack",
+  "description": "Bridge to Europe - NLI",
   "main": "index.js",
   "scripts": {
     "prestart": "npm rebuild node-sass",
@@ -16,12 +17,11 @@
     "sassdoc": "node ./dev/sassdoc.js",
     "docsserver": "npm run sassdoc && webpack-dev-server --port 8010 --config webpack.docs.config.js --content-base ./docs/ --open"
   },
-  "keywords": [
-    "frontend",
-    "webpack"
-  ],
-  "author": "Marcin Kwiatkowski",
-  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.37",
     "@babel/preset-env": "^7.0.0-beta.37",
@@ -59,10 +59,5 @@
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.2",
     "webpack-dev-server": "^2.10.1"
-  },
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
   }
 }

@@ -13,7 +13,7 @@
         margin: 0;
     }
 
-    .navigation-list-wrapper{
+    .navigation-list-wrapper {
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -22,21 +22,21 @@
         padding: 0;
     }
 
-    .library-logo-cont{
+    .library-logo-cont {
         text-align: right;
 
-        @include mobile{
+        @include mobile {
             display: none;
         }
 
-        @include tablet{
+        @include tablet {
             display: none;
         }
     }
 
 }
 
-.shared-header{
+.shared-header {
     padding-top: 9.375rem;
     height: 30.3125rem;
     display: flex;
@@ -76,12 +76,12 @@
     }
 }
 
-.desktop-navigation-links{
+.desktop-navigation-links {
     display: flex;
     align-items: center;
 }
 
-.navigation-links{
+.navigation-links {
     color: $color-menu-links;
 
     &:hover {
@@ -138,7 +138,7 @@
 //     color: white !important;
 // }
 
-.navigation-list:hover > .navigation-links{ 
+.navigation-list:hover > .navigation-links { 
     transition: all 0.1s;
 }
 
@@ -146,24 +146,24 @@
     transition: all 0.1s;
     transform: translateY(-5px);
 }
-.navigation-list-about:hover > .navigation-links{
+.navigation-list-about:hover > .navigation-links {
     color: white !important;
     opacity: 0.85;
 }
 
-.navigation-list-projects:hover > .navigation-links{
+.navigation-list-projects:hover > .navigation-links {
     color: $color-projects !important;
 }
 
-.navigation-list-education:hover > .navigation-links{
+.navigation-list-education:hover > .navigation-links {
     color: $color-courses-education !important;
 }
 
-.navigation-list-events:hover > .navigation-links{
+.navigation-list-events:hover > .navigation-links {
     color: $color-events !important;
 }
 
-.navigation-list-contact:hover > .navigation-links{
+.navigation-list-contact:hover > .navigation-links {
     color: white !important;
 }
 
@@ -176,14 +176,14 @@
     background-color: #EEEEEE;
 }
 
-.website-logo-cont{
+.website-logo-cont {
 
     @include mobile {
         padding: 0;
     }
 }
 
-.header-center{
+.header-center {
 
     display: flex;
 
@@ -192,7 +192,7 @@
     }
 }
 
-.header-wrapper{
+.header-wrapper {
     @include mobile {
         width: 100%;
     }

@@ -1,7 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 
-@import './vendor/fonts.css';
-
+@import './fonts/fonts.css';
+@import './fonts/fontello.css';
 
 @import 'base/main';
 @import 'base/mixins';
@@ -14,5 +14,3 @@
 
 @import 'partials/mobile-burger';
 @import 'partials/mobile-menu';
-
-@import './vendor/fontello.css';

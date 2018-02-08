@@ -30,7 +30,7 @@ const config = {
     },
     // devtool: "source-map",
     module: {
-        rules: [ 
+        rules: [
             {
                 test: /\.js$/,
                 include: path.resolve(__dirname, 'src'),
@@ -107,17 +107,8 @@ const config = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|svg)$/,
-                // loader: 'url-loader?name=assets/fontslimit=100000'
                 loader: 'url-loader?limit=100000&name=./assets/fonts/[hash].[ext]'
             },
-            // {
-            //     test: /\.(woff|woff2|eot|ttf|svg)$/,
-            //     loader: fontLocal
-            // },
-            // {
-            //     test: /\.(woff|woff2|eot|ttf|svg)$/,
-            //     loader: 'file-loader'
-            // }
         ]
     },
     plugins: [

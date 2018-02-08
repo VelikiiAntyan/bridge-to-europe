@@ -17,3 +17,8 @@
     src: url('../../fonts/CrimsonText-SemiBoldItalic.ttf');
     font-family: 'CrimsonText-SemiBoldItalic';
 }
+
+@font-face {
+    src: url('../../fonts/OpenSans-SemiBold.ttf');
+    font-family: 'OpenSans-SemiBold';
+}

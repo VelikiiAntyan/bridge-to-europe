@@ -49,6 +49,13 @@
     //       animation-fill-mode: both;
     //   }
 
+    .shared-block-details {
+
+        > a {
+            margin-bottom: 0.5rem; 
+        }
+    }
+
     .main-shared {
 
         .icon-arrow-thin {

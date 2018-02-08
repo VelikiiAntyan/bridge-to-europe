@@ -1,4 +1,4 @@
-.app-footer{
+.app-footer {
     
     color: $color-footer-text;
     background-color: $color-footer;
@@ -20,7 +20,7 @@
         }
     }
 
-    .copyright-text{
+    .copyright-text {
         margin: 0;
         font-size: 0.75rem;
         line-height: 17px;
@@ -31,7 +31,7 @@
         }
     }
 
-    .footer-icons{
+    .footer-icons {
         font-size: 1.5rem;
         margin: 1.5rem;
         
@@ -39,7 +39,7 @@
             cursor: pointer;
         }
         
-        &::before{
+        &::before {
             display: inline-block;
             margin: 0;
             
@@ -48,9 +48,9 @@
 
     .footer-icons:hover::before {
         transition: all 0.2s;
-        -webkit-transform: rotate(-5deg) scale(1.2);
-        -moz-transform: rotate(-5deg) scale(1.2);
-        -o-transform: rotate(-5deg) scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
     }
 
     .footer-upper {
@@ -75,7 +75,7 @@
         }
     }
 
-    input{
+    input {
         color: inherit;
         width: 100%;
         background-color: $color-footer;
@@ -165,7 +165,7 @@
         display: flex;
 
         @include mobile {
-            justify-content: center
+            justify-content: center;
         }
         
         address {

@@ -15,7 +15,7 @@
         }
     }
 
-    h2, h3 {
+    h2 {
         font-size: 1.875rem;
         font-weight: 800;
         line-height: 30px;
@@ -23,6 +23,8 @@
     }
 
     h3 {
+
+        @extend h2;
         @include mobile {
             color: black;
         }
@@ -48,12 +50,6 @@
             width: 100%;
             padding: 0;
             margin-top: 1rem;
-        }
-    }
-
-    .shared-header {
-        @include mobile {
-            
         }
     }
 
@@ -90,7 +86,7 @@
         @include mobile {
             padding-bottom: 1.25rem;
             margin-bottom: 1.25rem;
-            border-bottom: 1px solid rgba(115, 115, 115,0.3);
+            border-bottom: 1px solid rgba(115, 115, 115, 0.3);
         }
     }
     
@@ -125,7 +121,7 @@
     }
 
     .about-header {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/about.jpg') no-repeat center center;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/about.jpg') no-repeat center center;
         background-size: cover;
     }
 

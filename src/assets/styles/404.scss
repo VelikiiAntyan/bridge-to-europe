@@ -5,14 +5,18 @@
 #error {
 
     height: 100vh !important;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/404.jpg') no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/404.jpg') no-repeat center center;
     background-size: cover;
 
 
-    header, .shared-header {
+    header {
         height: auto;
         background: initial;
         padding: 0;
+    }
+
+    .shared-header {
+        @extend header;
     }
 
     h1 {
@@ -69,7 +73,7 @@
         background-color: transparent;
 
         @include mobile {
-            padding: 6.25rem 1.875rem 0 1.875rem!important;
+            padding: 6.25rem 1.875rem 0 1.875rem !important;
         }
     }
 
@@ -86,3 +90,4 @@
         }
     }
 }
+

@@ -44,8 +44,8 @@
         margin: 0;
     }
 
-    .singleProject-header{
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/single-project.jpg') no-repeat center center;
+    .singleProject-header {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/single-project.jpg') no-repeat center center;
         background-size: cover;
     }
 
@@ -106,6 +106,5 @@
         background-color: white;
         border-radius: 10px;
     }
-
     
 }

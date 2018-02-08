@@ -6,7 +6,7 @@
 
     @include footer-headers;
 
-    h1{
+    h1 {
         @include main-title;
         color: $color-events;
     }
@@ -87,14 +87,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(180deg,#dd5019,#ff6300);
-            color: #fff!important;
+            background: linear-gradient(180deg, #dd5019, #ff6300);
+            color: #fff !important;
             // margin-bottom: 3.125rem;
         }
     }
     
-    .eventsExhibitions-header{
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/events.jpg') no-repeat center center;
+    .eventsExhibitions-header {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/events.jpg') no-repeat center center;
         background-size: cover;
         @include header-layout;
     }
@@ -122,10 +122,6 @@
 
             a {
                 color: $color-events;
-
-                @include mobile {
-                
-                }
             }
         }
 
@@ -135,22 +131,13 @@
 
         
         @include featured-content-desktop;
-        // width: 50%;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // height: 100%;
-        
-        // @include mobile {
-        //     width: 100%;
-        // }
     }
 
     .exhibition-kit-wrapper {
         height: 370px;
         // opacity: 0.85;
-        background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.8) 100%),
-            linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0, 0, 0, 0.5) 100%),
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%),
             linear-gradient(0deg, rgba(4, 0, 255, 0.5) 0%, rgba(0, 102, 255, 0.9) 100%),
             url('~/dist/assets/images/events.jpg') no-repeat center center;
         color: white;
@@ -204,16 +191,16 @@
             height: 2.8125rem;
         }
 
-        @include tablet{
+        @include tablet {
             display: none;
         }
 
-        @include desktop{
+        @include desktop {
             display: none;
         }
     }
 
-    .shared-details-wrapper{
+    .shared-details-wrapper {
         
         @include mobile {
             width: 100%;
@@ -229,15 +216,15 @@
     }
 
     .shared-block-wrapper {
-        @include mobile{
+        @include mobile {
             border-left: 3px solid;
             margin-bottom: 3.125rem;
         }
     }
 
-    .shared-btn{
+    .shared-btn {
     
-        @include mobile{
+        @include mobile {
             width: 93%;
             padding: 0;
             margin: 0 auto;
@@ -246,7 +233,7 @@
     }
 
     
-    .eventsExhibitions-main{
+    .eventsExhibitions-main {
         padding-bottom: 0;
     }
 
@@ -263,13 +250,3 @@
     }
 }
 
-
-// .eventsExhibitions-main-wrapper{
-//     padding: 0;
-//     // background-color: gray;
-// }
-
-
-// .eventsExhibitions-past-events-wrapper{
-//     background-color: $secondary-background-color;
-// }

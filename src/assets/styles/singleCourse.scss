@@ -144,7 +144,7 @@
     }
 
     .singleCourse-header {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('~/dist/assets/images/single-course.jpg') no-repeat center center;
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../../assets/images/single-course.jpg') no-repeat center center;
         background-size: cover;
     }
 
@@ -154,13 +154,13 @@
         align-items: flex-start;
     
     
-        @include mobile{
+        @include mobile {
             flex-direction: column;
         }
         
     }
     
-    .section-info-wrapper , .program-featured-wrapper {
+    .section-info-wrapper {
         @include mobile {
             background-color: $color-past-events-bkg;
             border-left: 4px solid $color-courses-education;
@@ -168,8 +168,11 @@
             padding: 1rem 1.25rem 1.25rem 1.25rem;
         }
     }
+    .program-featured-wrapper {
+        @extend .section-info-wrapper;
+    }
 
-    .icon-right-open{
+    .icon-right-open {
     
         font-size: 18px;
         transition: all 0.4s;

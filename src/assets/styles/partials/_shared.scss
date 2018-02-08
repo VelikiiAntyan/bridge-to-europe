@@ -338,8 +338,10 @@ a {
     }
 }
 
-.js-close {
+
+.js-close.icon-right-open::before {
     transform: rotate(90deg);
+    transition: all 0.4s;
 }
 
 .js-hide {
@@ -383,8 +385,6 @@ a {
         padding: 0 5px;
     }
 }
-
-
 
 // .header-wrapper {
 //     margin-top: 9.375rem;

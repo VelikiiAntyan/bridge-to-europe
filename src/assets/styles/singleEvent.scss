@@ -132,6 +132,7 @@
                 border: none !important;
                 margin: 0 !important;
                 padding-bottom: 5rem;
+                border-radius: 0;
             }
     
         }
@@ -168,6 +169,7 @@
 
         @include mobile {
             width: 100%;
+            padding: 0;
         }
     }
 }

@@ -9,3 +9,6 @@ import FooterBtn from './assets/js/common/footer-btn';
 
 require('html-loader!./templates/singleProject.html');
 
+$('.carousel').carousel({
+    interval: false
+  })

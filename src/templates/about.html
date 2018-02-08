@@ -68,7 +68,7 @@
                 <div class="main-wrapper">
                     <p id="recent">Recent initiatives include:</p>
                     <section class="row-wrapper about-border">
-                        <h3 class="color-about">At the Source<i class="icon-right-open"></i></h3>
+                        <h3 class="color-about">At the Source<i class="icon-right-open" aria-hidden="true"></i></h3>
                         <div class="shared-block-wrapper">
                             <img class="block-img" src="../assets/images/library.jpg" alt="">
                             <div class="shared-details-wrapper">
@@ -85,7 +85,7 @@
                     </section>
                     <div class="shared-block-spacer"></div>
                     <section class="row-wrapper education-border">
-                        <h3 class="color-ephemera">Jewish Ephemera Collection<i class="icon-right-open"></i></h3>
+                        <h3 class="color-ephemera">Jewish Ephemera Collection<i class="icon-right-open" aria-hidden="true"></i></h3>
                         <div class="shared-block-wrapper">
                             <img class="block-img" src="../assets/images/library.jpg" alt="">
                             <div class="shared-details-wrapper">
@@ -102,7 +102,7 @@
                     </section>
                     <div class="shared-block-spacer"></div>
                     <section class="row-wrapper featured-border">
-                        <h3 class="color-education">Educational Materials<i class="icon-right-open"></i></h3>
+                        <h3 class="color-education">Educational Materials<i class="icon-right-open" aria-hidden="true"></i></h3>
                         <div class="shared-block-wrapper">
                             <img class="block-img" src="../assets/images/library.jpg" alt="">
                             <div class="shared-details-wrapper">
@@ -119,7 +119,7 @@
                     </section>
                     <div class="shared-block-spacer"></div>
                     <section class="row-wrapper event-border">
-                        <h3 class="color-event">Cultural Events<i class="icon-right-open"></i></h3>
+                        <h3 class="color-event">Cultural Events<i class="icon-right-open" aria-hidden="true"></i></h3>
                         <div class="shared-block-wrapper">
                             <img class="block-img" src="../assets/images/library.jpg" alt="">
                             <div class="shared-details-wrapper">
@@ -143,12 +143,12 @@
         <div class="footer-upper container">
             <div class="footer-upper-section">
                 <div class="footer-img" >
-                    <a href="https://rothschildfoundation.eu/" target="_blank">
+                    <a href="https://rothschildfoundation.eu/" target="_blank" rel="noopener">
                         <img src="../assets/images/logos/Rothschild.png" alt="Rothchild Foundation (Hanadav) Europe">
                     </a>
                 </div>
                 <div class="footer-img" >
-                    <a href="http://web.nli.org.il/sites/NLI/english/Pages/default.aspx" target="_blank">
+                    <a href="http://web.nli.org.il/sites/NLI/english/Pages/default.aspx" target="_blank" rel="noopener">
                         <img src="../assets/images/logos/NLI.png" alt="The National Library of Israel">
                     </a>
                 </div>
@@ -163,9 +163,12 @@
                         <div class="form-wrapper">
                             <div class="form-input-wrapper">
                                 <form>
-                                    <input type="email" name="email" placeholder="email">
-                                    <input type="text" name="text" placeholder="what's on your mind?">
-                                    <input type="submit" class="btn footer-contact-btn" value="send">
+                                    <label class="screen-reader-text" for="email">Email</label>
+                                    <input id="email" type="email" name="email" placeholder="email">
+                                    <label class="screen-reader-text" for="text">what is on your mind?</label>
+                                    <input id="text" type="text" name="text" placeholder="what's on your mind?">
+                                    <label class="screen-reader-text" for="email">send</label>
+                                    <input id="submit" type="submit" class="btn footer-contact-btn" value="send">
                                 </form>
                             </div>
                         </div>
@@ -175,7 +178,7 @@
             <div class="footer-upper-section mobile-item">
                 <h2>Come visit <span class="nli">the National Library</span></h2>
                 <div class="address-wrapper">
-                    <i class="icon-location-outline"></i>
+                    <i class="icon-location-outline" aria-hidden="true"></i>
                     <address>
                         Kiryat Edmon Saftra, Jerusalem, Israel, 9139002
                     </address>
@@ -189,7 +192,7 @@
             <div class="footer-upper-section desktop-item come-visit-section">
                 <h2>Come visit <span class="nli">the National Library</span></h2>
                 <div class="address-wrapper">
-                    <i class="icon-location-outline"></i>
+                    <i class="icon-location-outline" aria-hidden="true"></i>
                     <address>
                         Kiryat Edmon Saftra, Jerusalem, Israel, 9139002
                     </address>
@@ -200,19 +203,22 @@
             <div class="form-input-wrapper footer-upper-section desktop-item">
                 <h2>Contact Us</h2>
                 <form id="contact-form">
-                    <input type="email" name="email" placeholder="email">
-                    <input type="text" name="text" placeholder="what's on your mind?">
+                    <label class="screen-reader-text" for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="email">
+                    <label class="screen-reader-text" for="text">what is on your mind?</label>
+                    <input id="text" type="text" name="text" placeholder="what's on your mind?">
                 </form>
-                <input type="submit" class="btn footer-contact-btn" value="send">
+                <label class="screen-reader-text" for="email">send</label>
+                <input id="submit" type="submit" class="btn footer-contact-btn" value="send">
             </div>
 
             <!-- DESKTOP LAYOUT END  *******************************************************-->
         </div>
         <div class="footer-wrapper footer-lower">
             <div class="social-media-cont">
-                <i class="footer-icons icon-twitter"></i>
-                <i class="footer-icons icon-facebook-squared"></i>
-                <i class="footer-icons icon-email"></i>
+                <i aria-label="facebook" class="footer-icons icon-twitter"></i>
+                <i aria-label="twitter" class="footer-icons icon-facebook-squared"></i>
+                <i aria-label="email" class="footer-icons icon-email"></i>
             </div>
             <div class="copyright-wrapper">
                 <p class="copyright-text">

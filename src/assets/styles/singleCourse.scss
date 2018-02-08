@@ -22,7 +22,9 @@
     h3 {
         font-size: 1.875rem;
         font-weight: 800;
-        line-height: 30px;
+        // line-height: 30px;
+        // line-height: 42px;
+        line-height: 2.625rem;
         
         @include mobile {
             font-size: 1rem;
@@ -69,6 +71,8 @@
     }
 
     .singleCourse-main-wrapper {
+
+        overflow: hidden;
         ul {
             padding: 1rem 2rem;
             margin: 0;
@@ -112,18 +116,32 @@
     }
 
     .section-info-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // width: 100%;
 
         span {
-            margin-right: 20px;
+            // display: block;
+            position: relative;
+            padding-right: 20px;
+            z-index: 1;
+            background-color: $main-background-color;
             @include mobile {
                 margin: 0;
             }
+
+           
         }
-        
+
+        span::first-line {
+            background-color: yellow;
+        }
+
+        span:first-line {
+            background-color: yellow;
+        }
+
         @include mobile {
             display: flex;
             justify-content: space-between;
@@ -131,11 +149,11 @@
         }
 
         &:after {
-            content: '';
-            background-color: $color-ephemera;
-            height: 1px;
-            flex: 1;
-            opacity: 0.3;
+            // content: '';
+            // background-color: $color-ephemera;
+            // height: 1px;
+            // flex: 1;
+            // opacity: 0.3;
 
             @include mobile {
                 content: none;
@@ -220,5 +238,31 @@
                 content: none;
             }
         }
+    }
+
+    .fillLine {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    hr {
+        float: right;
+        display: inline-block;
+        width: 1000px;
+        color: red;
+
+        opacity: 0.3;
+        display: block;
+        height: 1px;
+        border: 0;
+        // border: 1px solid #AF6F00;
+        border-top: 2px solid $color-ephemera;
+        // margin: 1em 0;
+        padding: 0; 
+        position: absolute;
+        bottom: 0;
+        overflow: hide;
+        z-index: -1;
     }
 }

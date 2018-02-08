@@ -14,10 +14,12 @@
         font-weight: bold;
         line-height: 25px !important;
         font-size: 1.25rem !important;
-
+        
         @include mobile {
             color: #C67E00;
+            margin: 0 0 1.5rem 0 !important;
         }
+        
     }
 
     .copyright-text {
@@ -48,6 +50,7 @@
 
     .footer-icons:hover::before {
         transition: all 0.2s;
+        transform: scale(1.2);
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
         -o-transform: scale(1.2);
@@ -73,6 +76,7 @@
                 }
             }
         }
+
     }
 
     input {
@@ -91,7 +95,6 @@
         }
     }
 
-    
     .footer-contact-btn {
         font-family: 'OpenSansHebrew-ExtraBold';
         color: inherit;
@@ -121,8 +124,6 @@
         line-height: 26px;
         color: inherit;
     }
-
-    
 
     .social-media-cont {
         margin: 6.875rem 0 2rem 0;
@@ -195,7 +196,23 @@
         }
     }
 
-    
+    .come-visit-section {
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .form-input-wrapper {
+        @extend .come-visit-section;
+    }
 
 }
-

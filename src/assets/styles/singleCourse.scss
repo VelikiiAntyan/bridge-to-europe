@@ -44,11 +44,11 @@
     }
 
     .color-featured {
-        line-height: 41px;
+        line-height: 2.5625rem;
         margin-bottom: 0.75rem;
 
         @include mobile {
-            line-height: 24px;
+            line-height: 1.5rem;
             margin: 0;
         }
     }

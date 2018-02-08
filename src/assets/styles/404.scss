@@ -22,14 +22,14 @@
     h1 {
         font-size: 7.5rem;
         font-weight: 800;
-        line-height: 163px;
+        line-height: 10.1875rem;
         color: $color-featured;
         margin: 0 3.4375rem 0 0;
 
         @include mobile {
             font-size: 3.75rem;
             font-weight: 800;
-            line-height: 60px;
+            line-height: 3.75rem;
         }
     }
     
@@ -38,23 +38,23 @@
         font-family: 'OpenSansHebrew';
         font-size: 3.75rem;
         font-weight: 300;
-        line-height: 66px;
+        line-height: 4.125rem;
         margin-top: 2rem;
 
         @include mobile {
             font-size: 1.5rem;
             font-weight: 300;
-            line-height: 30px;
+            line-height: 1.875rem;
         }
     }
 
     p {
         font-size: 1.5rem;
-        line-height: 36px;
+        line-height: 2.25rem;
 
         @include mobile {
             font-size: 1.125rem;
-            line-height: 24px;
+            line-height: 1.5rem;
         }
     }
     

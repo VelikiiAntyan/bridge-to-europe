@@ -1,14 +1,14 @@
 
 
-#mobile-menu{
+#mobile-menu {
     background: linear-gradient(0deg, #C67E00 0%, #905B00 100%);
     font-family: 'OpenSansHebrew-ExtraBold';
     font-size: 1.1875rem;
     position: fixed;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     z-index: 2;
@@ -39,7 +39,7 @@
         color: $color-mobile-menu;
     }
 
-     .mobile-menu-main{
+    .mobile-menu-main {
         background-color: transparent !important;
     }
 
@@ -54,7 +54,6 @@
                 cursor: pointer;
             }
         }
-
     }
 
     .copyright-wrapper {
@@ -65,8 +64,8 @@
         bottom: 30px;
 
         .copyright-text {
-            font-size: 10px;
-            line-height: 14px;
+            font-size: 0.625rem;
+            line-height: 0.875rem;
             font-family: 'OpenSans-Light';
         }
     }

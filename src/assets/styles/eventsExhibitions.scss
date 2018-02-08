@@ -16,7 +16,7 @@
         h3 {
             font-size: 1.875rem;
             font-weight: 800;
-            line-height: 41px;
+            line-height: 2.5625rem;
         }
 
     }
@@ -27,7 +27,7 @@
         @include mobile {
             font-size: 1.3125rem;
             font-weight: 800;
-            line-height: 28px;
+            line-height: 1.75rem;
             margin: 1.25rem 0;
         }
     }
@@ -43,7 +43,7 @@
         font-size: 3.5rem;
         font-weight: 300;
         letter-spacing: -2px;
-        line-height: 38px;
+        line-height: 2.375rem;
         padding-top: 7.1875rem;
         margin-bottom: 3.125rem;
         font-family: 'OpenSans-Light';
@@ -53,7 +53,7 @@
             font-size: 1.5rem !important;
             font-weight: 300;
             letter-spacing: -1px;
-            line-height: 38px;
+            // line-height: 38px;
             padding: 0.5rem 1rem;
             margin: 0; 
         }
@@ -62,13 +62,13 @@
     strong {
         font-size: 1.875rem;
         font-weight: 800;
-        line-height: 30px;
+        line-height: 1.875rem;
         margin: 0.9375rem 0;
         font-family: 'OpenSansHebrew-ExtraBold';
 
         @include mobile {
             margin-top: 0;
-            line-height: 36px;
+            line-height: 2.25rem;
         }
     }
 
@@ -77,7 +77,7 @@
             width: 100%;
             font-size: 0.9375rem;
             font-weight: 800;
-            line-height: 20px;
+            line-height: 1.25rem;
             margin-top: 1rem;
             height: 3.125rem;
             padding: 1rem;
@@ -162,7 +162,7 @@
             border-radius: 10px;
             font-size: 0.9375rem;
             font-weight: 800;
-            line-height: 20px;
+            line-height: 1.25rem;
             height: 2.75rem;
             width: 63%;
             color: white;

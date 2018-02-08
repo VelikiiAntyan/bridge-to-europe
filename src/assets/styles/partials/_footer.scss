@@ -12,7 +12,7 @@
 
     h2 {
         font-weight: bold;
-        line-height: 25px !important;
+        line-height: 1.5625rem !important;
         font-size: 1.25rem !important;
         
         @include mobile {
@@ -25,11 +25,11 @@
     .copyright-text {
         margin: 0;
         font-size: 0.75rem;
-        line-height: 17px;
+        line-height: 1.0625rem;
 
         @include mobile {
             font-size: 0.625rem;
-            line-height: 14px;
+            line-height: 0.875rem;
         }
     }
 
@@ -121,7 +121,7 @@
     .view-map {
         font-family: 'OpenSansHebrew-ExtraBold';
         font-weight: bold;
-        line-height: 26px;
+        line-height: 1.625rem;
         color: inherit;
     }
 

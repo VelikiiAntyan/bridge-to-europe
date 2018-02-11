@@ -1,8 +1,7 @@
 import './assets/styles/styles.scss';
 import './assets/styles/home.scss';
 
-// import 'lazysizes';
-import 'lazysizes/lazysizes.min.js';
+import 'lazysizes';
 import { MenuToggle, StickyMenu, FooterBtn } from './assets/js/common';
 
 require('html-loader!./templates/index.html');

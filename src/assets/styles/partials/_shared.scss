@@ -240,9 +240,13 @@ a {
     width: 585px;
     margin: 0 auto;
     
-    @include mobile {
+    @media screen and (max-width: 585px) {
         width: 100%;
     }
+
+    // @include mobile {
+    //     width: 100%;
+    // }
 }
 
 .uppercase {

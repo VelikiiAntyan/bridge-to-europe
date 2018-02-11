@@ -1,9 +1,10 @@
 .app-header {
 
-    height: 30.3125rem;
+    // min-height: 30.3125rem;
+    min-height: 485px;
 
     @include mobile {
-        height: 16.5625rem;
+        min-height: 16.5625rem;
     }
 
     background-repeat: no-repeat;
@@ -38,7 +39,8 @@
 
 .shared-header {
     padding-top: 9.375rem;
-    height: 30.3125rem;
+    // min-height: 30.3125rem;
+    min-height: 485px;
     display: flex;
     // padding-bottom: 10.9375rem;
     color: $color-header;
@@ -49,14 +51,14 @@
 
     @include mobile {
         padding: 2.1875rem; 
-        height: 16.5625rem;
+        // min-height: 16.5625rem;
+        min-height: 265px;
     }
     
     h1 {
         font-size: 3.375rem;
         font-weight: 800;
         line-height: 4.625rem;
-
     }
 
     p {

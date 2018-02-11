@@ -23,10 +23,31 @@
     }
 
     h3 {
-
         @extend h2;
+        display: flex;
+        align-items: center;
         @include mobile {
             color: black;
+        }
+
+        .icon-link {
+
+            color: inherit;
+            transition: all 0.2s;
+
+            &:hover {
+                transform: translate(5px, 0);
+                transition: all 0.2s;
+            }
+
+            .icon-arrow-thin {
+                font-size: 18px;
+        
+                @include mobile {
+                    display: none;
+                }
+            }
+            
         }
     }
 
@@ -40,28 +61,6 @@
     p {
         line-height: 1.6875rem;
     }
-
-    .block-img {
-        height: 109px;
-        width: 108px;
-        
-        @include mobile {
-            height: 280px;
-            width: 100%;
-            padding: 0;
-            margin-top: 1rem;
-        }
-    }
-
-    .shared-block-details {
-        border: none;
-        margin-left: 2.1875rem;
-
-        @include mobile {
-            margin: 0;
-        }
-    }
-
 
     #recent {
         margin-bottom: 1.5rem;
@@ -154,12 +153,7 @@
         }
     }
     
-    .icon-right-open {
-        
-        @include mobile {
-            display: none;
-        }
-    }
+    
 
     .btn-wrapper {
         @include mobile {
@@ -170,8 +164,40 @@
 
     .shared-block-wrapper {
 
+        display: block;
+
         @include mobile {
+            display: flex;
             flex-direction: column-reverse;
+        }
+
+        .block-img {
+            height: 109px;
+            width: 108px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            float: left;
+            
+            @include mobile {
+                height: 280px;
+                width: 100%;
+                padding: 0;
+                margin-top: 1rem;
+                margin-right: 0;
+                margin-bottom: 0;
+                float: none;
+            }
+        }
+
+        .shared-block-details {
+            display: block;
+            border: none;
+            // margin-left: 2.1875rem;
+            margin: 0;
+    
+            @include mobile {
+                display: flex;
+            }
         }
     }
 

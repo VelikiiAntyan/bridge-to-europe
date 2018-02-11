@@ -353,89 +353,7 @@ a {
     background-color: transparent !important;
 }
 
-.nav-down {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100 */
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-}
 
-.nav-up {
-    top: -30.3125rem !important;
-}
-
-.sticky-menu-black {
-    background: black !important;
-}
-
-.sticky-menu-wrapper {
-    font-family: 'OpenSans-SemiBold';
-    position: fixed !important;
-    top: 0;
-    right: 0;
-    left: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: 1000;
-
-    @include mobile {
-        height: 60px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 992px) {
-        padding: 0 5px;
-    }
-}
-
-// .header-wrapper {
-//     margin-top: 9.375rem;
-// }
-
-// AFFIX MENU ********************
-
-// .affix {
-//     position: fixed !important;
-//     top: 0;
-//     background-color: black;
-//     left: 0;
-//     right: 0;
-//     z-index: 20;
-//     // animation-name: fadeIn;
-//     // animation-duration: 0.5s;
-//     // animation-fill-mode: both;
-
-//     .main-header {
-//         display: none;
-//     }
-    
-//     .shared-header-content {
-//         display: none;
-//     }
-
-//     .desktop-navigation-links {
-//         margin-bottom: 1.5rem !important;
-//     }
-
-//     .shared-header {
-//         height: auto !important;
-//         padding-bottom: 0 !important;
-
-//         .desktop-navigation-links {
-//             margin-bottom: 0rem !important;
-//         }
-//     }
-
-// }
-
-// .affix.app-header {
-//     height: auto !important;
-//     padding-bottom: 0 !important;
-// }
-
-// .affix-main-padding {
-//     padding-top: 510px;
-//     // padding-top: 587px;
-// }
 
 .mobile-item {
     display: none;
@@ -475,7 +393,6 @@ a {
         }
     }
 }
-
 
 .screen-reader-text { 
     clip: rect(1px, 1px, 1px, 1px); 

@@ -37,7 +37,6 @@ const StickyMenu = (() => {
             // Change Menu color depending on Window ScrollTop
             if ($(window).scrollTop() > headerHeight) {
                 $('.sticky-menu-wrapper').addClass('sticky-menu-black');
-                console.log('change color now');
             } else {
                 $('.sticky-menu-wrapper').removeClass('sticky-menu-black');
             }

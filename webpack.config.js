@@ -45,11 +45,11 @@ const config = {
             },
             {
                 test   : /\.css$/,
-                loaders: ['style-loader', 'css-loader', 'resolve-url-loader']
+                loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader']
             },
             {
                 test   : /\.scss$/,
-                loaders: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
+                loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader']
             },
             // {
             //     test: /\.scss$/,

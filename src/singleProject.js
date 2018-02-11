@@ -10,5 +10,15 @@ import FooterBtn from './assets/js/common/footer-btn';
 require('html-loader!./templates/singleProject.html');
 
 $('.carousel').carousel({
-    interval: false
-  })
+  interval: false
+});
+
+//Lazy Load Carousel Images
+$(function() {
+  return $('.carousel.lazy').on('slide.bs.carousel', function(ev) {
+    let lazy;
+    lazy = $(ev.relatedTarget).find("img[data-src]");
+    lazy.attr("src", lazy.data('src'));
+    lazy.removeAttr("data-src");
+  });
+});

@@ -4,7 +4,7 @@ const MenuToggle = (() => {
             $(this).toggleClass("is-active");
             $('#mobile-menu').toggleClass("js-hide");
             $('.sticky-menu-wrapper').toggleClass('js-transparent');
-            
+
             if($('#mobile-menu').hasClass('js-hide')) {
                 $('body,html').css({
                     'overflow-y': 'auto',
@@ -16,7 +16,6 @@ const MenuToggle = (() => {
                     'height': '100%'
                 });
             }
-
         });
     });
 })();

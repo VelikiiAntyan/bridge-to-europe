@@ -272,6 +272,10 @@
 
     .img-wrapper {
         height: 300px;
+        
+        @include mobile {
+            height: 0;
+        }
     }
     
 }

@@ -5,7 +5,7 @@ const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// const ASSET_PATH = process.env.ASSET_PATH || '../../';
+const ASSET_PATH = process.env.ASSET_PATH || '../../';
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
@@ -29,7 +29,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'assets/js/[name].bundle.js',
-        // publicPath: ASSET_PATH
+        publicPath: ASSET_PATH
     },
     // devtool: "source-map",
     module: {
@@ -78,6 +78,7 @@ const config = {
             {
                 test: /\.scss$/,
                 loader: extractCSS.extract([
+                    
                     // {
                     //     loader: 'style-loader',
                     // },
@@ -143,7 +144,7 @@ const config = {
             'window.jQuery': 'jquery'
         }),
         // new webpack.DefinePlugin({
-        //     'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH)
+        // 'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH)
         // })
         
         // new BundleAnalyzerPlugin()

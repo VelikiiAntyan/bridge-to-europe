@@ -49,6 +49,25 @@ const config = {
             },
             {
                 test   : /\.scss$/,
+                // loader: extractCSS.extract(
+                //     {
+                //         loader: 'resolve-url-loader',
+                //     },
+                    
+                //     {
+                //         loader: 'css-loader',
+                //     },
+                //     {
+                //         loader: 'postcss-loader',
+                //         options: postCSSOptions
+                //     },
+                //     {
+                //         loader: 'resolve-url-loader',
+                //     },
+                //     {
+                //         loader: 'sass-loader',
+                //     }
+                // ),
                 loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader']
             },
             // {

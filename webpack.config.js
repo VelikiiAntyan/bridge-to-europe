@@ -4,6 +4,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const ASSET_PATH = process.env.ASSET_PATH || '/';
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
@@ -26,7 +28,8 @@ const config = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'assets/js/[name].bundle.js'
+        filename: 'assets/js/[name].bundle.js',
+        publicPath: ASSET_PATH
     },
     // devtool: "source-map",
     module: {
@@ -47,18 +50,19 @@ const config = {
                 test   : /\.css$/,
                 loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader']
             },
-            {
-                test   : /\.scss$/,
-                loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader']
-            },
+            // {
+            //     test   : /\.scss$/,
+            //     loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader']
+            // },
+
+
+            
             // {
             //     test   : /\.css$/,
             //     loader: extractCSS.extract(
             //         {
-            //             loader: 'resolve-url-loader',
-            //             options: {url: false}
+            //             loader: 'style-loader',
             //         },
-                    
             //         {
             //             loader: 'css-loader',
             //         },
@@ -66,37 +70,35 @@ const config = {
             //             loader: 'postcss-loader',
             //             options: postCSSOptions
             //         },
-            //         {
-            //             loader: 'resolve-url-loader',
-            //         },
-            //         {
-            //             loader: 'sass-loader',
-            //         }
+            //         // {
+            //         //     loader: 'resolve-url-loader',
+            //         // },
             //     ),
-            //     // loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader']
             // },
-            // {
-            //     test: /\.scss$/,
-            //     loader: extractCSS.extract([
-            //         {
-            //             loader: 'resolve-url-loader',
-            //             options: {url: false}
-            //         },
-                    
-            //         {
-            //             loader: 'css-loader',
-            //             // options: {url: false}
-            //         },
-            //         {
-            //             loader: 'postcss-loader',
-            //             options: postCSSOptions
-            //         },
-            //         {
-            //             loader: 'sass-loader',
-            //             // options: {url: false}
-            //         }
-            //     ]),
-            // },
+            {
+                test: /\.scss$/,
+                loader: extractCSS.extract([
+                    // {
+                    //     loader: 'style-loader',
+                    // },
+                    {
+                        loader: 'css-loader',
+                        // options: {url: false}
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: postCSSOptions
+                    },
+                    {
+                        loader: 'resolve-url-loader',
+                        options: {url: false}
+                    },
+                    {
+                        loader: 'sass-loader',
+                        // options: {url: false}
+                    }
+                ]),
+            },
 
             {
                 test: /\.(png|jpg)$/,
@@ -139,7 +141,7 @@ const config = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
-        })
+        }),
         
         // new BundleAnalyzerPlugin()
     ]

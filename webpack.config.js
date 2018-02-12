@@ -5,7 +5,8 @@ const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const ASSET_PATH = process.env.ASSET_PATH || '../../';
+// const ASSET_PATH = process.env.ASSET_PATH || '../../';
+const ASSET_PATH = process.env.ASSET_PATH || './';
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({

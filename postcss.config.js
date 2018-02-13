@@ -6,6 +6,7 @@ module.exports = {
         require('autoprefixer')({
             browsers: ['last 2 versions', 'ie >= 11']
         }),
+        require("css-mqpacker"),
         require('cssnano')({ zindex: false })
     ]
 };

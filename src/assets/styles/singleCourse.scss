@@ -31,6 +31,8 @@
             text-transform: uppercase;
             
         }
+
+        
     }
 
     p {
@@ -262,7 +264,6 @@
         padding: 0; 
         position: absolute;
         bottom: 0;
-        overflow: hide;
         z-index: -1;
 
         @include mobile {
@@ -278,4 +279,21 @@
         }
     }
     
+}
+
+
+// FireFox Stylings 
+@-moz-document url-prefix() { 
+    #single-course h3 {
+        position: relative !important;     
+        z-index: 3 !important;
+    }
+
+    #single-course .section-info-title span {
+        position: static !important;
+    }
+
+    #single-course .section-info-title hr {
+        z-index: -1 !important;
+    }
 }

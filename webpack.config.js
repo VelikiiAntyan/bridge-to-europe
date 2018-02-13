@@ -5,8 +5,11 @@ const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// const ASSET_PATH = process.env.ASSET_PATH || '../../';
-const ASSET_PATH = process.env.ASSET_PATH || './';
+// const ASSET_PATH = process.env.ASSET_PATH || '../../'; //For all files expect html
+const ASSET_PATH = process.env.ASSET_PATH || './'; //For HTML files only
+
+// const HtmlCriticalPlugin = require("html-critical-webpack-plugin");
+
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
@@ -144,6 +147,19 @@ const config = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
+        // new HtmlCriticalPlugin({
+        //     base: path.resolve(__dirname, 'dist'),
+        //     src: 'index.html',
+        //     dest: 'index.html',
+        //     inline: true,
+        //     minify: true,
+        //     extract: true,
+        //     width: 375,
+        //     height: 565,
+        //     penthouse: {
+        //       blockJSRequests: false,
+        //     }
+        // })
         // new webpack.DefinePlugin({
         // 'process.env.ASSET_PATH': JSON.stringify(ASSET_PATH)
         // })

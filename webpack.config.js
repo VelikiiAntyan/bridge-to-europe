@@ -9,9 +9,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const PurifyCSSPlugin = require('purifycss-webpack');
 
 
-const ASSET_PATH = process.env.ASSET_PATH || '../../'; //Build For all files expect html
+// const ASSET_PATH = process.env.ASSET_PATH || '../../'; //Build For all files expect html
 // console.log(process);
-// const ASSET_PATH = process.env.ASSET_PATH || './'; //Build For HTML files only
+const ASSET_PATH = process.env.ASSET_PATH || './'; //Build For HTML files only
 
 // const HtmlCriticalPlugin = require("html-critical-webpack-plugin");
 

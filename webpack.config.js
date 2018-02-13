@@ -1,12 +1,15 @@
 const webpack = require('webpack');
 const path = require('path');
+// const glob = require('glob');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// const ASSET_PATH = process.env.ASSET_PATH || '../../'; //For all files expect html
-const ASSET_PATH = process.env.ASSET_PATH || './'; //For HTML files only
+// const PurifyCSSPlugin = require('purifycss-webpack');
+
+const ASSET_PATH = process.env.ASSET_PATH || '../../'; //Build For all files expect html
+// const ASSET_PATH = process.env.ASSET_PATH || './'; //Build For HTML files only
 
 // const HtmlCriticalPlugin = require("html-critical-webpack-plugin");
 
@@ -139,7 +142,7 @@ const config = {
         ]
     },
     plugins: [
-        new webpack.NamedModulesPlugin(),
+        // new webpack.NamedModulesPlugin(),
         extractCSS,
         extractCommons,
         new webpack.ProvidePlugin({
@@ -147,6 +150,11 @@ const config = {
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
+        // new PurifyCSSPlugin({
+        //     // Give paths to parse for rules. These should be absolute!
+        //     paths: glob.sync(path.join(__dirname, 'dist/*.html')),
+        //     // minimize: true
+        // })
         // new HtmlCriticalPlugin({
         //     base: path.resolve(__dirname, 'dist'),
         //     src: 'index.html',

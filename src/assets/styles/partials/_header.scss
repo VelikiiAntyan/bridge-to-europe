@@ -207,7 +207,6 @@
     }
 }
 
-
 .nav-down {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100 */
     background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -217,7 +216,7 @@
 }
 
 .nav-up {
-    top: -30.3125rem !important;
+    top: -10rem !important;
 }
 
 .sticky-menu-black {
@@ -232,6 +231,7 @@
     left: 0;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
+    will-change: top;
 
     @include mobile {
         height: 60px;

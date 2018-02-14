@@ -1,20 +1,19 @@
 const webpack = require('webpack');
 const path = require('path');
-// const glob = require('glob');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('assets/styles/[name].bundle.css');
 const postCSSOptions  = require('./postcss.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
+
+const ASSET_PATH = process.env.ASSET_PATH || '../../'; //Build For all files expect html
+
+// const ASSET_PATH = process.env.ASSET_PATH || './'; //Build For HTML files only
+
+// const glob = require('glob');
 // const PurifyCSSPlugin = require('purifycss-webpack');
-
-
-// const ASSET_PATH = process.env.ASSET_PATH || '../../'; //Build For all files expect html
-// console.log(process);
-const ASSET_PATH = process.env.ASSET_PATH || './'; //Build For HTML files only
-
 // const HtmlCriticalPlugin = require("html-critical-webpack-plugin");
-
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const extractCommons = new webpack.optimize.CommonsChunkPlugin({
@@ -63,9 +62,6 @@ const config = {
             //     test   : /\.scss$/,
             //     loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader']
             // },
-
-
-            
             // {
             //     test   : /\.css$/,
             //     loader: extractCSS.extract(
@@ -74,6 +70,7 @@ const config = {
             //         },
             //         {
             //             loader: 'css-loader',
+                        //    options: {url: false}
             //         },
             //         {
             //             loader: 'postcss-loader',
@@ -87,10 +84,6 @@ const config = {
             {
                 test: /\.scss$/,
                 loader: extractCSS.extract([
-                    
-                    // {
-                    //     loader: 'style-loader',
-                    // },
                     {
                         loader: 'css-loader',
                         // options: {url: false}
@@ -101,15 +94,12 @@ const config = {
                     },
                     {
                         loader: 'resolve-url-loader',
-                        options: {url: false}
                     },
                     {
                         loader: 'sass-loader',
-                        // options: {url: false}
                     }
                 ]),
             },
-
             {
                 test: /\.(png|jpg)$/,
                 use: [{

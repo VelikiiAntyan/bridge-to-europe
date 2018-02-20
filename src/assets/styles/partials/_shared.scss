@@ -154,8 +154,7 @@ main {
 }
 
 .shared-details-wrapper {
-    // width: 55%;
-    
+
     @include mobile {
         width: 100%;
         padding: 1.25rem;
@@ -163,6 +162,11 @@ main {
         margin-bottom: 0.25rem;
         
     }
+}
+
+_:-ms-fullscreen,
+:root .shared-details-wrapper {
+    width: 100%;
 }
 
 .main-shared {
